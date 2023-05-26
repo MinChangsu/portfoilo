@@ -1,0 +1,419 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eff2fb;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  font-family: "InkLipquid";
+  font-size: 24px;
+
+  animation-duration: 10s;
+  animation-name: changeBgColor;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.burger {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  right: 30px;
+  width: 80px;
+  height: 80px;
+  background-color: #aac4ff;
+  border-radius: 50%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.burger div {
+  background-color: white;
+  border-radius: 10px;
+  width: 45px;
+  height: 7px;
+  margin: 4px;
+  transition: all 0.5s;
+}
+
+.navBg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 35vw;
+  animation: navAnim 0.2s;
+  background-color: #aac4ff;
+  border-bottom-left-radius: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 50px;
+}
+
+.navBgDis {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  animation-name: navAnim2;
+  animation-duration: 0.4s;
+  background-color: #aac4ff;
+  border-bottom-left-radius: 100%;
+}
+
+.navText {
+  animation-name: navTextAnim;
+  animation-duration: 0.7s;
+  letter-spacing: 5px;
+  font-family: "KCCMurukmuruk";
+  text-align: end;
+  text-transform: uppercase;
+}
+
+.navText a {
+  display: block;
+  text-decoration: none;
+  color: #102a3f;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.navText .navHome:hover {
+  font-size: 34px;
+  transition: all 0.5s;
+  font-weight: 800;
+  color: white;
+}
+.navText .navIntro:hover {
+  font-size: 34px;
+  transition: all 0.5s;
+  font-weight: 800;
+  color: white;
+}
+.navText .navStack:hover {
+  font-size: 34px;
+  transition: all 0.5s;
+  font-weight: 800;
+  color: white;
+}
+.navText .navPort:hover {
+  font-size: 34px;
+  transition: all 0.5s;
+  font-weight: 800;
+  color: white;
+}
+
+.line1 {
+  transform: rotate(-45deg) translate(-9px, 11px);
+}
+.line2 {
+  opacity: 0;
+}
+.line3 {
+  transform: rotate(45deg) translate(-10px, -11.5px);
+}
+
+@keyframes navAnim {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 30%;
+    height: 35vw;
+  }
+}
+
+@keyframes navAnim2 {
+  from {
+    width: 30%;
+    height: 35vw;
+  }
+  to {
+    width: 0;
+    height: 0;
+  }
+}
+
+@keyframes navTextAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes changeBgColor {
+  from {
+    background-color: #eff2fb;
+  }
+  to {
+    background-color: #d1daff;
+  }
+}
+
+@media (max-width: 280px) {
+  .burger {
+    display: none;
+  }
+  .navBg {
+    display: none;
+  }
+}
+/* 세로모드 모바일 디바이스 (가로 해상도가 576px 보다 작은 화면에 적용) */
+@media (min-width: 281px) and (max-width: 575px) {
+  /* burger 외형 */
+  .burger {
+    right: 20px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .burger div {
+    width: 30px;
+    height: 4px;
+    margin: 3px;
+  }
+  /* burger 닫기(X) 표시 */
+  .line1 {
+    transform: rotate(-45deg) translate(-4px, 4.5px);
+  }
+  .line2 {
+    opacity: 0;
+  }
+  .line3 {
+    transform: rotate(45deg) translate(-9.5px, -10.5px);
+  }
+
+  /* nav 반 원 */
+  .navBg {
+    width: 52%;
+    height: 70vw;
+  }
+
+  .navText a {
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+  }
+
+  .navText .navHome:hover {
+    font-size: 18px;
+  }
+  .navText .navIntro:hover {
+    font-size: 18px;
+  }
+  .navText .navStack:hover {
+    font-size: 18px;
+  }
+  .navText .navPort:hover {
+    font-size: 18px;
+  }
+
+  @keyframes navAnim {
+    from {
+      width: 0;
+      height: 0;
+    }
+    to {
+      width: 52%;
+      height: 70vw;
+    }
+  }
+}
+/* 가로모드 모바일 디바이스 (가로 해상도가 576px보다 크고 768px 보다 작은 화면에 적용)  */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* burger 외형 */
+  .burger {
+    right: 20px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .burger div {
+    width: 30px;
+    height: 4px;
+    margin: 3px;
+  }
+  /* burger 닫기(X) 표시 */
+  .line1 {
+    transform: rotate(-45deg) translate(-4px, 4.5px);
+  }
+  .line2 {
+    opacity: 0;
+  }
+  .line3 {
+    transform: rotate(45deg) translate(-9.5px, -10.5px);
+  }
+
+  /* nav 반 원 */
+  .navBg {
+    width: 45%;
+    height: 50vw;
+  }
+
+  .navText a {
+    font-size: 18px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+  }
+
+  .navText .navHome:hover {
+    font-size: 22px;
+  }
+  .navText .navIntro:hover {
+    font-size: 22px;
+  }
+  .navText .navStack:hover {
+    font-size: 22px;
+  }
+  .navText .navPort:hover {
+    font-size: 22px;
+  }
+
+  @keyframes navAnim {
+    from {
+      width: 0;
+      height: 0;
+    }
+    to {
+      width: 52%;
+      height: 70vw;
+    }
+  }
+}
+/*태블릿 디바이스 (가로 해상도가 768px보다 크고 991px 보다 작은 화면에 적용)  */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* burger 외형 */
+  .burger {
+    width: 60px;
+    height: 60px;
+  }
+
+  .burger div {
+    width: 35px;
+    height: 5px;
+    margin: 3px;
+  }
+  /* burger 닫기(X) 표시 */
+  .line1 {
+    transform: rotate(-45deg) translate(-5px, 5.5px);
+  }
+  .line2 {
+    opacity: 0;
+  }
+  .line3 {
+    transform: rotate(45deg) translate(-10px, -10.5px);
+  }
+
+  /* nav 반 원 */
+  .navBg {
+    width: 35%;
+    height: 45vw;
+  }
+
+  .navText a {
+    font-size: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 1;
+  }
+
+  .navText .navHome:hover {
+    font-size: 24px;
+  }
+  .navText .navIntro:hover {
+    font-size: 24px;
+  }
+  .navText .navStack:hover {
+    font-size: 24px;
+  }
+  .navText .navPort:hover {
+    font-size: 24px;
+  }
+  @keyframes navAnim {
+    from {
+      width: 0;
+      height: 0;
+    }
+    to {
+      width: 35%;
+      height: 45vw;
+    }
+  }
+}
+/* 데스크탑 (가로 해상도가 992px보다 크고 1199px 보다 작은 화면에 적용)  */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* burger 외형 */
+  .burger {
+    top: 15px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .burger div {
+    width: 40px;
+    height: 6px;
+    margin: 4px;
+  }
+  /* burger 닫기(X) 표시 */
+  .line1 {
+    transform: rotate(-45deg) translate(-9px, 11px);
+  }
+  .line2 {
+    opacity: 0;
+  }
+  .line3 {
+    transform: rotate(45deg) translate(-9px, -10.5px);
+  }
+
+  /* nav 반 원 */
+  .navBg {
+    height: 38vw;
+  }
+
+  .navText {
+    letter-spacing: 4px;
+  }
+  .navText a {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .navText .navHome:hover {
+    font-size: 28px;
+  }
+  .navText .navIntro:hover {
+    font-size: 28px;
+  }
+  .navText .navStack:hover {
+    font-size: 28px;
+  }
+  .navText .navPort:hover {
+    font-size: 28px;
+  }
+
+  @keyframes navAnim {
+    from {
+      width: 0;
+      height: 0;
+    }
+    to {
+      width: 30%;
+      height: 38vw;
+    }
+  }
+}
+/* 큰화면 데스크탑 (가로 해상도가 1200px 보다 큰 화면에 적용)  */
+@media (min-width: 1200px) {
+}
