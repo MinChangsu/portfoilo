@@ -5,30 +5,6 @@
   padding: 50px;
 }
 
-.container .previewContainer {
-  width: 100%;
-  height: 80vh;
-  border-radius: 50px 50px 0px 0px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-  background-color: #eff2fb;
-
-  display: flex;
-  align-items: center;
-}
-
-.container .previewContainer .carouselContainer {
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  width: 50%;
-  height: 80vh;
-}
-.container .previewContainer .projectExContainer {
-  width: 50%;
-  height: 80vh;
-  background-color: #eff2fb;
-}
-
 .container .previewSelectContainer {
   width: 100%;
   height: auto;
@@ -56,6 +32,7 @@
   align-items: center;
   background-color: #eff2fb;
   border-end-start-radius: 50px;
+  transition: background-color 0.7s;
 }
 
 .container .previewSelectContainer .selectedArea {
@@ -65,6 +42,7 @@
   justify-content: center;
   align-items: center;
   background-color: #eff2fb;
+  transition: background-color 0.7s;
 }
 .container .previewSelectContainer .selectedLastArea {
   width: auto;
@@ -74,6 +52,7 @@
   align-items: center;
   background-color: #eff2fb;
   border-end-end-radius: 50px;
+  transition: background-color 0.7s;
 }
 
 /* sixman 아이콘 */
@@ -83,7 +62,7 @@
   width: 120px;
   height: 120px;
   transition: all 0.3s;
-  animation: smallerScaleIcon 0.8s forwards;
+  margin: 10px 0px 10px 70px;
   &:hover {
     transform: scale(1.1);
     rotate: -10deg;
@@ -95,7 +74,8 @@
   background-size: 100% 100%;
   width: 130px;
   height: 100px;
-  animation: scaleIcon 0.8s forwards;
+  margin: 40px 65px;
+  animation: select_Prj 0.8s forwards;
   rotate: -10deg;
   cursor: pointer;
 }
@@ -107,7 +87,6 @@
   width: 120px;
   height: 120px;
   transition: all 0.3s;
-  animation: smallerScaleIcon 0.8s forwards;
   &:hover {
     transform: scale(1.1);
     rotate: -10deg;
@@ -119,7 +98,8 @@
   background-size: 100% 100%;
   width: 130px;
   height: 100px;
-  animation: scaleIcon 0.8s forwards;
+  margin: 40px 60px;
+  animation: select_Prj 0.8s forwards;
   rotate: -10deg;
   cursor: pointer;
 }
@@ -131,7 +111,6 @@
   width: 120px;
   height: 120px;
   transition: all 0.3s;
-  animation: smallerScaleIcon 0.8s forwards;
   &:hover {
     transform: scale(1.1);
     rotate: -10deg;
@@ -143,7 +122,8 @@
   background-size: 100% 100%;
   width: 130px;
   height: 100px;
-  animation: scaleIcon 0.8s forwards;
+  margin: 40px 60px;
+  animation: select_Prj 0.8s forwards;
   rotate: -10deg;
   cursor: pointer;
 }
@@ -155,7 +135,6 @@
   width: 130px;
   height: 130px;
   transition: all 0.3s;
-  animation: smallerScaleIcon 0.8s forwards;
   &:hover {
     transform: scale(1.1);
     rotate: -10deg;
@@ -167,7 +146,8 @@
   background-size: 100% 100%;
   width: 110px;
   height: 100px;
-  animation: scale_AppIcon 0.8s forwards;
+  margin: 40px 70px;
+  animation: select_App_Prj 0.8s forwards;
   rotate: -10deg;
   cursor: pointer;
 }
@@ -179,7 +159,7 @@
   width: 130px;
   height: 130px;
   transition: all 0.3s;
-  animation: smallerScaleIcon 0.8s forwards;
+  margin: 10px 70px 10px 0px;
   &:hover {
     transform: scale(1.1);
     rotate: -10deg;
@@ -191,7 +171,8 @@
   background-size: 100% 100%;
   width: 110px;
   height: 100px;
-  animation: scale_AppIcon 0.8s forwards;
+  margin: 40px 75px;
+  animation: select_App_Prj 0.8s forwards;
   rotate: -10deg;
   cursor: pointer;
 }
@@ -229,36 +210,24 @@
 }
 
 /* 애니메이션 */
-@keyframes scaleIcon {
+@keyframes select_Prj {
   from {
     transform: scale(0.5);
-    margin: 50px;
   }
   to {
     transform: scale(1.1);
-    margin: 50px 55px 50px 55px;
   }
 }
-@keyframes scale_AppIcon {
+
+@keyframes select_App_Prj {
   from {
     transform: scale(0.5);
-    margin: 50px;
   }
   to {
     transform: scale(1.5);
-    margin: 50px 70px 50px 70px;
   }
 }
-@keyframes smallerScaleIcon {
-  from {
-    transform: scale(1.1);
-    margin: 35px 60px 35px 60px;
-  }
-  to {
-    transform: scale(1);
-    margin: 35px 50px 35px 50px;
-  }
-}
+
 /* 갤럭시 폴드 */
 @media (max-width: 280px) {
 }

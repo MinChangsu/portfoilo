@@ -1,6 +1,7 @@
 import { useState } from "react";
-import Carousels from "../../component/MyPhotoCarousel/Carousel";
 import styles from "./Portfolio.module.css";
+import SixmanCarousel from "../../component/portfolioPage/sixman/SixmanCarousel";
+import SixmanPage from "../../component/portfolioPage/sixman/SixmanPage";
 
 export default function Portfolio() {
   const [selectSixman, setSelectSixman] = useState(true);
@@ -47,12 +48,7 @@ export default function Portfolio() {
 
   return (
     <div className={styles.container} id="Portfolio">
-      <div className={styles.previewContainer}>
-        <div className={styles.carouselContainer}>
-          <Carousels />
-        </div>
-        <div className={styles.projectExContainer}></div>
-      </div>
+      <SixmanPage />
       <div className={styles.previewSelectContainer}>
         {/* sixman */}
         {selectSixman ? (
