@@ -2,12 +2,15 @@
   width: 100%;
   height: 80vh;
   border-radius: 50px 50px 0px 0px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-  background-color: black;
 
   animation: opacBG 0.5s forwards;
 }
 .previewContainer {
+  width: auto;
+  height: auto;
+  border-radius: 50px 50px 0px 0px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+
   display: flex;
   align-items: center;
 }
@@ -24,14 +27,14 @@
 
 .skillsHashTag {
   font-family: KCC-Ganpan;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   font-weight: 500;
   font-size: 50px;
   margin-right: 15px;
 }
 .skillsTitle {
   text-decoration: none;
-  color: white;
+  color: black;
   font-family: "Dancing Script";
   font-weight: bold;
   font-size: 55px;
@@ -57,7 +60,7 @@
 }
 .previewContainer .projectExContainer .innerExContainer {
   font-family: MBC1961GulimM;
-  color: white;
+  color: black;
 
   display: flex;
   flex-direction: column;
@@ -69,22 +72,23 @@
   display: flex;
   align-items: center;
 }
-.html {
+.reactJs {
   width: 70px;
   height: 70px;
-  background-image: url("../../../../public/images/languageIcons/html_icon.png");
+  background-image: url("../../../../public/images/languageIcons/reactJS_icon.png");
   background-size: 100% 100%;
 }
 .css {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   background-image: url("../../../../public/images/languageIcons/css_icon.png");
   background-size: 100% 100%;
+  margin-bottom: 15px;
 }
-.js {
-  width: 70px;
-  height: 70px;
-  background-image: url("../../../../public/images/languageIcons/JS_icon.png");
+._figma {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../../public/images/languageIcons/figma_icon.png");
   background-size: 100% 100%;
 }
 
@@ -140,7 +144,7 @@
     background-color: transparent;
   }
   to {
-    background-color: black;
+    background-color: #d1daff;
   }
 }
 @keyframes textAnim {

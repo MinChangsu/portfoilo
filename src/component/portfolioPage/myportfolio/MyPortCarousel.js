@@ -1,39 +1,39 @@
-import SCarousel, { SCarouselItem } from "./SCarousel";
-import styles from "./SixmanCarousel.module.css";
+import styles from "./MyPortCarousel.module.css";
+import PCarousel, { PCarouselItem } from "./PCarousel";
 
-export default function SixmanCarousel() {
+export default function MyPortCarousel() {
   return (
-    <SCarousel>
-      <SCarouselItem>
+    <PCarousel>
+      <PCarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img1}></div>
         </div>
-      </SCarouselItem>
-      <SCarouselItem>
+      </PCarouselItem>
+      <PCarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img2}></div>
         </div>
-      </SCarouselItem>
-      <SCarouselItem>
+      </PCarouselItem>
+      <PCarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img3}></div>
         </div>
-      </SCarouselItem>
-      <SCarouselItem>
+      </PCarouselItem>
+      <PCarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img4}></div>
         </div>
-      </SCarouselItem>
-      <SCarouselItem>
+      </PCarouselItem>
+      <PCarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img5}></div>
         </div>
-      </SCarouselItem>
-      <SCarouselItem>
+      </PCarouselItem>
+      <PCarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img6}></div>
         </div>
-      </SCarouselItem>
-    </SCarousel>
+      </PCarouselItem>
+    </PCarousel>
   );
 }

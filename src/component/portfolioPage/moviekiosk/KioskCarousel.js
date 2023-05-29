@@ -1,39 +1,39 @@
-import SCarousel, { SCarouselItem } from "./SCarousel";
-import styles from "./SixmanCarousel.module.css";
+import KCarousel, { KCarouselItem } from "./KCarousel";
+import styles from "./KioskCarousel.module.css";
 
-export default function SixmanCarousel() {
+export default function KioskCarousel() {
   return (
-    <SCarousel>
-      <SCarouselItem>
+    <KCarousel>
+      <KCarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img1}></div>
         </div>
-      </SCarouselItem>
-      <SCarouselItem>
+      </KCarouselItem>
+      <KCarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img2}></div>
         </div>
-      </SCarouselItem>
-      <SCarouselItem>
+      </KCarouselItem>
+      <KCarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img3}></div>
         </div>
-      </SCarouselItem>
-      <SCarouselItem>
+      </KCarouselItem>
+      <KCarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img4}></div>
         </div>
-      </SCarouselItem>
-      <SCarouselItem>
+      </KCarouselItem>
+      <KCarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img5}></div>
         </div>
-      </SCarouselItem>
-      <SCarouselItem>
+      </KCarouselItem>
+      <KCarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img6}></div>
         </div>
-      </SCarouselItem>
-    </SCarousel>
+      </KCarouselItem>
+    </KCarousel>
   );
 }

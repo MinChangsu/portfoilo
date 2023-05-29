@@ -1,12 +1,15 @@
 import { useState } from "react";
 import styles from "./Portfolio.module.css";
-import SixmanCarousel from "../../component/portfolioPage/sixman/SixmanCarousel";
 import SixmanPage from "../../component/portfolioPage/sixman/SixmanPage";
+import AllToPage from "../../component/portfolioPage/alltou/AllToPage";
+import MyPortPage from "../../component/portfolioPage/myportfolio/MyPortPage";
+import KioskPage from "../../component/portfolioPage/moviekiosk/KioskPage";
+import StopWatchPage from "../../component/portfolioPage/stopwatch/StopWatchPage";
 
 export default function Portfolio() {
-  const [selectSixman, setSelectSixman] = useState(true);
+  const [selectSixman, setSelectSixman] = useState(false);
   const [selectAllTo, setSelectAllTo] = useState(false);
-  const [selectMySite, setSelectMySite] = useState(false);
+  const [selectMySite, setSelectMySite] = useState(true);
   const [selectKiosk, setSelectKiosk] = useState(false);
   const [selectStopWatch, setSelectStopWatch] = useState(false);
 
@@ -48,7 +51,19 @@ export default function Portfolio() {
 
   return (
     <div className={styles.container} id="Portfolio">
-      <SixmanPage />
+      {(() => {
+        if (selectSixman) {
+          return <SixmanPage />;
+        } else if (selectAllTo) {
+          return <AllToPage />;
+        } else if (selectMySite) {
+          return <MyPortPage />;
+        } else if (selectKiosk) {
+          return <KioskPage />;
+        } else if (selectStopWatch) {
+          return <StopWatchPage />;
+        }
+      })()}
       <div className={styles.previewSelectContainer}>
         {/* sixman */}
         {selectSixman ? (
@@ -62,7 +77,7 @@ export default function Portfolio() {
         )}
         {/* All To Us */}
         {selectAllTo ? (
-          <div className={styles.selectedArea}>
+          <div className={styles.selectedArea1}>
             <div className={styles.selectedAllTo}></div>
           </div>
         ) : (
@@ -72,7 +87,7 @@ export default function Portfolio() {
         )}
         {/* MyPortfolio */}
         {selectMySite ? (
-          <div className={styles.selectedArea}>
+          <div className={styles.selectedArea2}>
             <div className={styles.selectedMySite}></div>
           </div>
         ) : (
@@ -82,7 +97,7 @@ export default function Portfolio() {
         )}
         {/* Kisok Main Prj */}
         {selectKiosk ? (
-          <div className={styles.selectedArea}>
+          <div className={styles.selectedArea3}>
             <div className={styles.selectedKiosk}></div>
           </div>
         ) : (

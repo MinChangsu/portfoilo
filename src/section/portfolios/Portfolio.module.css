@@ -10,7 +10,7 @@
   height: auto;
   border-radius: 0px 0px 50px 50px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-  background-color: #d1daff;
+  background-color: #eff2fb;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,18 +30,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eff2fb;
+  background-color: black;
   border-end-start-radius: 50px;
   transition: background-color 0.7s;
 }
 
-.container .previewSelectContainer .selectedArea {
+.container .previewSelectContainer .selectedArea1 {
   width: auto;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eff2fb;
+  background-color: #5232cd;
+  transition: background-color 0.7s;
+}
+.container .previewSelectContainer .selectedArea2 {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d1daff;
+  transition: background-color 0.7s;
+}
+.container .previewSelectContainer .selectedArea3 {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(66, 66, 66);
   transition: background-color 0.7s;
 }
 .container .previewSelectContainer .selectedLastArea {
@@ -50,7 +68,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eff2fb;
+  background-color: #2c2c2c;
   border-end-end-radius: 50px;
   transition: background-color 0.7s;
 }

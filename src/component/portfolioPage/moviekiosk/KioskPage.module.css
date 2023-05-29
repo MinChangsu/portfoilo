@@ -2,12 +2,15 @@
   width: 100%;
   height: 80vh;
   border-radius: 50px 50px 0px 0px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-  background-color: black;
 
   animation: opacBG 0.5s forwards;
 }
 .previewContainer {
+  width: auto;
+  height: auto;
+  border-radius: 50px 50px 0px 0px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+
   display: flex;
   align-items: center;
 }
@@ -69,22 +72,16 @@
   display: flex;
   align-items: center;
 }
-.html {
+.reactNative {
   width: 70px;
-  height: 70px;
-  background-image: url("../../../../public/images/languageIcons/html_icon.png");
+  height: 63px;
+  background-image: url("../../../../public/images/languageIcons/RN_icon.png");
   background-size: 100% 100%;
 }
-.css {
-  width: 70px;
-  height: 70px;
-  background-image: url("../../../../public/images/languageIcons/css_icon.png");
-  background-size: 100% 100%;
-}
-.js {
-  width: 70px;
-  height: 70px;
-  background-image: url("../../../../public/images/languageIcons/JS_icon.png");
+._figma {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../../public/images/languageIcons/figma_icon.png");
   background-size: 100% 100%;
 }
 
@@ -140,7 +137,7 @@
     background-color: transparent;
   }
   to {
-    background-color: black;
+    background-color: rgb(66, 66, 66);
   }
 }
 @keyframes textAnim {

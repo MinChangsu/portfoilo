@@ -1,39 +1,39 @@
-import SCarousel, { SCarouselItem } from "./SCarousel";
-import styles from "./SixmanCarousel.module.css";
+import styles from "./AllToCarousel.module.css";
+import ACarousel, { ACarouselItem } from "./ACarousel";
 
-export default function SixmanCarousel() {
+export default function AllToCarousel() {
   return (
-    <SCarousel>
-      <SCarouselItem>
+    <ACarousel>
+      <ACarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img1}></div>
         </div>
-      </SCarouselItem>
-      <SCarouselItem>
+      </ACarouselItem>
+      <ACarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img2}></div>
         </div>
-      </SCarouselItem>
-      <SCarouselItem>
+      </ACarouselItem>
+      <ACarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img3}></div>
         </div>
-      </SCarouselItem>
-      <SCarouselItem>
+      </ACarouselItem>
+      <ACarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img4}></div>
         </div>
-      </SCarouselItem>
-      <SCarouselItem>
+      </ACarouselItem>
+      <ACarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img5}></div>
         </div>
-      </SCarouselItem>
-      <SCarouselItem>
+      </ACarouselItem>
+      <ACarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img6}></div>
         </div>
-      </SCarouselItem>
-    </SCarousel>
+      </ACarouselItem>
+    </ACarousel>
   );
 }

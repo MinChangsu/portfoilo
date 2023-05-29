@@ -28,6 +28,7 @@
   height: 80px;
   background-color: #aac4ff;
   border-radius: 50%;
+  z-index: 2;
   &:hover {
     cursor: pointer;
   }
@@ -40,6 +41,7 @@
   height: 7px;
   margin: 4px;
   transition: all 0.5s;
+  z-index: 3;
 }
 
 .navBg {
@@ -56,6 +58,7 @@
   flex-direction: column;
   justify-content: center;
   padding-right: 50px;
+  z-index: 1;
 }
 
 .navBgDis {

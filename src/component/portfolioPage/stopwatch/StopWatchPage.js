@@ -1,7 +1,7 @@
-import SixmanCarousel from "./SixmanCarousel";
-import styles from "./SixmanPage.module.css";
+import styles from "./StopWatchPage.module.css";
+import StopWatchCarousel from "./StopWatchCarousel";
 
-export default function SixmanPage() {
+export default function StopWatchPage() {
   return (
     <div className={styles.container}>
       <div className={styles.previewContainer}>
@@ -13,7 +13,7 @@ export default function SixmanPage() {
             </a>
           </div>
           <div className={styles.carouselContainer}>
-            <SixmanCarousel />
+            <StopWatchCarousel />
           </div>
         </div>
         <div className={styles.projectExContainer}>
@@ -22,19 +22,20 @@ export default function SixmanPage() {
               <div className={styles.titles_TitleArea}>
                 <div className={styles.title_Title}>Title</div>
                 <div className={styles.title_Text}>
-                  SixMan Mini Prj - omo Robot R1 Mini
+                  SixMan Main Prj - Movie Kiosk
                 </div>
               </div>
               <div className={styles.titles_TitleArea}>
                 <div className={styles.title_Title}>Role</div>
-                <div className={styles.title_Text}>Frontend</div>
+                <div className={styles.title_Text}>
+                  Frontend & 디자인, 설계 및 기획
+                </div>
               </div>
               <div className={styles.titles_TitleArea}>
                 <div className={styles.title_Title}>Skills</div>
                 <div className={styles.skillContainer}>
-                  <div className={styles.html}></div>
-                  <div className={styles.css}></div>
-                  <div className={styles.js}></div>
+                  <div className={styles.reactNative}></div>
+                  <div className={styles._figma}></div>
                 </div>
               </div>
             </div>

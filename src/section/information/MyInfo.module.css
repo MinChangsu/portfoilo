@@ -10,8 +10,9 @@
 }
 
 .aboutMeHashTag {
-  font-family: "Dancing Script";
-  font-weight: bold;
+  font-family: KCC-Ganpan;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
   font-size: 50px;
   margin: 20px;
 }
@@ -22,12 +23,11 @@
   font-family: "Dancing Script";
   font-weight: bold;
   font-size: 60px;
-  border-bottom: double 5px black;
   letter-spacing: 3px;
   word-break: keep-all;
-  transition: all 0.7s;
+  transition: all 0.3s;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
 .photoArea {

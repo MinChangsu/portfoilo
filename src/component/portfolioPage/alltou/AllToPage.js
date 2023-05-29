@@ -1,7 +1,7 @@
-import SixmanCarousel from "./SixmanCarousel";
-import styles from "./SixmanPage.module.css";
+import styles from "./AllToPage.module.css";
+import AllToCarousel from "./AllToCarousel";
 
-export default function SixmanPage() {
+export default function AllToPage() {
   return (
     <div className={styles.container}>
       <div className={styles.previewContainer}>
@@ -13,7 +13,7 @@ export default function SixmanPage() {
             </a>
           </div>
           <div className={styles.carouselContainer}>
-            <SixmanCarousel />
+            <AllToCarousel />
           </div>
         </div>
         <div className={styles.projectExContainer}>
@@ -21,9 +21,7 @@ export default function SixmanPage() {
             <div className={styles.titles}>
               <div className={styles.titles_TitleArea}>
                 <div className={styles.title_Title}>Title</div>
-                <div className={styles.title_Text}>
-                  SixMan Mini Prj - omo Robot R1 Mini
-                </div>
+                <div className={styles.title_Text}>Team Prj - All To U</div>
               </div>
               <div className={styles.titles_TitleArea}>
                 <div className={styles.title_Title}>Role</div>
@@ -32,9 +30,8 @@ export default function SixmanPage() {
               <div className={styles.titles_TitleArea}>
                 <div className={styles.title_Title}>Skills</div>
                 <div className={styles.skillContainer}>
-                  <div className={styles.html}></div>
+                  <div className={styles.reactJs}></div>
                   <div className={styles.css}></div>
-                  <div className={styles.js}></div>
                 </div>
               </div>
             </div>
