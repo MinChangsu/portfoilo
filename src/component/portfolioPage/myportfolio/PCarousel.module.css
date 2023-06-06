@@ -9,15 +9,8 @@
   transition: transform 0.3s;
 }
 
-.carousel_item {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 300px;
-  color: #fff;
-}
-
 .indicators {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,4 +85,88 @@
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+/* 갤럭시 폴드 */
+@media (max-width: 280px) {
+}
+
+/* 세로모드 모바일 디바이스 (가로 해상도가 576px 보다 작은 화면에 적용) */
+@media (min-width: 281px) and (max-width: 575px) {
+  .indicators .prevBtn {
+    &:hover {
+      transform: scale(1);
+    }
+  }
+  .indicators .nextBtn {
+    &:hover {
+      transform: scale(1);
+    }
+  }
+
+  .indicators > button {
+    margin: 20px -1px;
+  }
+
+  .indicators .inActive {
+    width: 25px;
+    height: 25px;
+    transform: scale(0.3);
+  }
+
+  .indicators .active {
+    width: 25px;
+    height: 25px;
+    transform: scale(0.5);
+  }
+}
+
+/* 가로모드 모바일 디바이스 (가로 해상도가 576px보다 크고 768px 보다 작은 화면에 적용)  */
+@media (min-width: 576px) and (max-width: 767px) {
+  .indicators > button {
+    margin: 2.5px;
+  }
+
+  .indicators .inActive {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    transform: scale(0.4);
+  }
+
+  .indicators .active {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    transform: scale(0.6);
+  }
+}
+
+/*태블릿 디바이스 (가로 해상도가 768px보다 크고 991px 보다 작은 화면에 적용)  */
+@media (min-width: 768px) and (max-width: 991px) {
+  .indicators > button {
+    margin: 2.5px;
+  }
+
+  .indicators .inActive {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    transform: scale(0.4);
+  }
+
+  .indicators .active {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    transform: scale(0.6);
+  }
+}
+
+/* 데스크탑 (가로 해상도가 992px보다 크고 1199px 보다 작은 화면에 적용)  */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* 큰화면 데스크탑 (가로 해상도가 1200px 보다 큰 화면에 적용)  */
+@media (min-width: 1200px) {
 }

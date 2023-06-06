@@ -1,0 +1,909 @@
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.overlay .overlayContainer {
+  width: 500px;
+  height: 100vh;
+  position: relative;
+  background-color: white;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  border-radius: 50px 50px 0px 0px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.previewContainer {
+  display: flex;
+  align-items: center;
+}
+
+.previewContainer .previewInnerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+}
+
+.skillsHashTag {
+  font-family: KCC-Ganpan;
+  font-weight: 500;
+  font-size: 50px;
+  margin-right: 15px;
+}
+.skillsTitle {
+  text-decoration: none;
+  font-family: "Dancing Script";
+  font-weight: bold;
+  font-size: 55px;
+  letter-spacing: 3px;
+  word-break: keep-all;
+  transition: all 0.7s;
+  &:hover {
+  }
+}
+
+.previewContainer .previewInnerContainer .carouselContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 60vh;
+}
+.previewContainer .previewInnerContainer .carouselContainer_App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 60vh;
+  margin-top: 30px;
+}
+
+.previewContainer .projectExContainer {
+  width: 50%;
+  height: auto;
+  border-top-right-radius: 50px;
+}
+.previewContainer .projectExContainer .innerExContainer {
+  font-family: MBC1961GulimM;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+.previewContainer .projectExContainer .innerExContainer .skillContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* 아이콘 CSS */
+.html {
+  width: 70px;
+  height: 70px;
+  background-image: url("../../../public/images/languageIcons/html_icon.png");
+  background-size: 100% 100%;
+}
+.css {
+  width: 70px;
+  height: 70px;
+  background-image: url("../../../public/images/languageIcons/css_icon.png");
+  background-size: 100% 100%;
+}
+.js {
+  width: 70px;
+  height: 70px;
+  background-image: url("../../../public/images/languageIcons/JS_icon.png");
+  background-size: 100% 100%;
+}
+.reactJs {
+  width: 70px;
+  height: 70px;
+  background-image: url("../../../public/images/languageIcons/reactJS_icon.png");
+  background-size: 100% 100%;
+}
+.reactNative {
+  width: 70px;
+  height: 63px;
+  background-image: url("../../../public/images/languageIcons/RN_icon.png");
+  background-size: 100% 100%;
+}
+._figma {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../public/images/languageIcons/figma_icon.png");
+  background-size: 100% 100%;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.titles .titles_TitleArea {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+
+  animation: textAnim 1s forwards 1s;
+}
+
+.titles .titles_TitleArea .title_Title {
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 30px;
+  word-break: keep-all;
+}
+.titles .titles_TitleArea .title_Text {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 30px;
+  word-break: keep-all;
+}
+
+.detail {
+  width: 100%;
+  height: 40vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.detail ._detailEx {
+  width: auto;
+  height: auto;
+  padding: 0px 30px;
+  word-break: keep-all;
+  opacity: 0;
+
+  animation: textAnim 1s forwards 1.5s;
+}
+
+.detail ._detailEx ._detailEx_Text {
+  font-size: 18px;
+  line-height: 2;
+  margin: 10px 0px;
+}
+
+/* Button Styles */
+.readBtnArea {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.read_Sixman_Btn {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  font-family: OAGothic-ExtraBold;
+  border: 6px double white;
+  border-radius: 50px;
+  background-color: #9b8649;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 900;
+  color: white;
+  opacity: 0;
+  transition: all 0.5s;
+  animation: btnAnim 2s forwards 2s;
+  &:hover {
+    border: 6px solid white;
+    background-color: white;
+    color: #9b8649;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.read_AllTo_Btn {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  font-family: OAGothic-ExtraBold;
+  border: 6px solid black;
+  border-radius: 50px;
+  background-color: #ffeb3a;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 900;
+  color: black;
+  opacity: 0;
+  animation: btnAnim 2s forwards 2s;
+  transition: all 0.5s;
+  &:hover {
+    border: 6px solid black;
+    background-color: black;
+    color: #ffeb3a;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.read_MyPort_Btn {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  font-family: OAGothic-ExtraBold;
+  border: 6px solid #b1b2fe;
+  border-radius: 50px;
+  background-color: #b1b2fe;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 900;
+  color: white;
+  opacity: 0;
+  animation: btnAnim 2s forwards 2s;
+  transition: all 0.5s;
+  &:hover {
+    border: 6px solid white;
+    background-color: white;
+    color: #b1b2fe;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.read_Kiosk_Btn {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  font-family: OAGothic-ExtraBold;
+  border: 6px solid black;
+  border-radius: 50px;
+  background-color: #a94cc0;
+  padding: 12px 15px;
+  font-size: 16px;
+  font-weight: 900;
+  color: black;
+  opacity: 0;
+  animation: btnAnim 2s forwards 2s;
+  transition: all 0.5s;
+  &:hover {
+    border: 6px solid black;
+    background-color: black;
+    color: #a94cc0;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.read_StopWatch_Btn {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  font-family: OAGothic-ExtraBold;
+  border: 6px double white;
+  border-radius: 50px;
+  background-color: #8b8ceb;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 900;
+  color: white;
+  opacity: 0;
+  transition: all 0.5s;
+  animation: btnAnim 2s forwards 2s;
+  &:hover {
+    border: 6px double #8b8ceb;
+    background-color: white;
+    color: #8b8ceb;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes btnAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes textAnim {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* 갤럭시 폴드 */
+@media (max-width: 280px) {
+}
+
+/* 세로모드 모바일 디바이스 (가로 해상도가 576px 보다 작은 화면에 적용) */
+@media (min-width: 281px) and (max-width: 575px) {
+  .container {
+    height: auto;
+  }
+
+  .previewContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .previewContainer .projectExContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .previewContainer .projectExContainer .innerExContainer {
+    align-items: center;
+    margin: 0px;
+    padding: 30px;
+  }
+
+  .skillsHashTag {
+    font-size: 35px;
+    margin: 30px 15px;
+  }
+  .skillsTitle {
+    font-size: 40px;
+  }
+
+  .titles .titles_TitleArea .title_Title {
+    font-size: 16px;
+    padding: 20px;
+  }
+  .titles .titles_TitleArea .title_Text {
+    font-size: 14px;
+    padding: 20px;
+  }
+  .detail {
+    height: auto;
+  }
+  .detail ._detailEx {
+    padding: 0px 10px;
+  }
+  .detail ._detailEx ._detailEx_Text {
+    font-size: 14px;
+    line-height: 2.3;
+    margin: 15px 0px;
+  }
+
+  .previewContainer .previewInnerContainer .carouselContainer {
+    margin-top: 30px;
+    height: 22vh;
+  }
+  .previewContainer .previewInnerContainer .carouselContainer_App {
+    margin-top: 30px;
+    height: 45vh;
+  }
+
+  /* 아이콘 CSS */
+  .html {
+    width: 52px;
+    height: 52px;
+  }
+  .css {
+    width: 55px;
+    height: 55px;
+  }
+  .js {
+    width: 60px;
+    height: 60px;
+  }
+  .reactJs {
+    width: 50px;
+    height: 50px;
+  }
+  .reactNative {
+    width: 50px;
+    height: 43px;
+  }
+  ._figma {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* 버튼 */
+  .read_Sixman_Btn {
+    font-size: 10px;
+    padding: 7px 12px;
+    border: 4px double white;
+    &:hover {
+      border: 4px solid #9b8649;
+    }
+  }
+  .read_AllTo_Btn {
+    font-size: 10px;
+    padding: 7px 12px;
+    border: 4px solid black;
+    &:hover {
+      border: 4px solid black;
+    }
+  }
+  .read_MyPort_Btn {
+    font-size: 10px;
+    padding: 7px 12px;
+    border: 4px solid #b1b2fe;
+    &:hover {
+      border: 4px solid white;
+    }
+  }
+  .read_Kiosk_Btn {
+    font-size: 10px;
+    padding: 7px 12px;
+    border: 4px solid black;
+    &:hover {
+      border: 4px solid black;
+    }
+  }
+  .read_StopWatch_Btn {
+    font-size: 10px;
+    padding: 7px 12px;
+    border: 4px double white;
+    &:hover {
+      border: 4px double #8b8ceb;
+    }
+  }
+
+  @keyframes textAnim {
+    from {
+      transform: translateX(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+/* 갤럭시 폴드 */
+@media (max-width: 280px) {
+  .container {
+    height: auto;
+  }
+
+  .previewContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .previewContainer .projectExContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .previewContainer .projectExContainer .innerExContainer {
+    align-items: center;
+    margin: 0px;
+    padding: 30px;
+  }
+
+  .skillsHashTag {
+    font-size: 25px;
+    margin: 20px 5px;
+  }
+  .skillsTitle {
+    font-size: 15px;
+  }
+
+  .titles .titles_TitleArea .title_Title {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .titles .titles_TitleArea .title_Text {
+    font-size: 11px;
+    padding: 10px;
+  }
+
+  .detail {
+    height: 35vh;
+  }
+  .detail ._detailEx {
+    padding: 0px 10px;
+  }
+  .detail ._detailEx ._detailEx_Text {
+    font-size: 14px;
+    line-height: 2.3;
+    margin: 15px 0px;
+  }
+
+  .previewContainer .previewInnerContainer .carouselContainer {
+    display: none;
+  }
+  .previewContainer .previewInnerContainer .carouselContainer_App {
+    display: none;
+  }
+
+  /* 아이콘 CSS */
+  .html {
+    width: 40px;
+    height: 40px;
+  }
+  .css {
+    width: 40px;
+    height: 40px;
+  }
+  .js {
+    width: 42px;
+    height: 42px;
+  }
+  .reactJs {
+    width: 40px;
+    height: 40px;
+  }
+  .reactNative {
+    width: 38px;
+    height: 33px;
+  }
+  ._figma {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* 버튼 */
+  .read_Sixman_Btn {
+    font-size: 10px;
+    padding: 6px 8px;
+  }
+  .read_AllTo_Btn {
+    font-size: 10px;
+    padding: 6px 8px;
+  }
+  .read_MyPort_Btn {
+    font-size: 10px;
+    padding: 6px 8px;
+  }
+  .read_Kiosk_Btn {
+    font-size: 10px;
+    padding: 6px 8px;
+  }
+  .read_StopWatch_Btn {
+    font-size: 10px;
+    padding: 6px 8px;
+  }
+
+  @keyframes textAnim {
+    from {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+/* 가로모드 모바일 디바이스 (가로 해상도가 576px보다 크고 768px 보다 작은 화면에 적용)  */
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    height: auto;
+  }
+
+  .previewContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .previewContainer .projectExContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .previewContainer .projectExContainer .innerExContainer {
+    align-items: center;
+    margin: 0px;
+    padding: 30px;
+  }
+
+  .skillsHashTag {
+    font-size: 35px;
+    margin: 30px 15px;
+  }
+  .skillsTitle {
+    font-size: 40px;
+  }
+
+  .titles .titles_TitleArea .title_Title {
+    font-size: 20px;
+    padding: 20px;
+  }
+  .titles .titles_TitleArea .title_Text {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .detail {
+    height: 35vh;
+  }
+  .detail ._detailEx {
+    padding: 0px 10px;
+  }
+  .detail ._detailEx ._detailEx_Text {
+    font-size: 16px;
+    line-height: 2.3;
+    margin: 15px 0px;
+  }
+
+  .previewContainer .previewInnerContainer .carouselContainer {
+    height: 50vh;
+  }
+  .previewContainer .previewInnerContainer .carouselContainer_App {
+    margin-top: 30px;
+    height: 60vh;
+  }
+
+  /* 아이콘 CSS */
+  .html {
+    width: 60px;
+    height: 60px;
+  }
+  .css {
+    width: 60px;
+    height: 60px;
+  }
+  .js {
+    width: 65px;
+    height: 65px;
+  }
+  .reactJs {
+    width: 50px;
+    height: 50px;
+  }
+  .reactNative {
+    width: 50px;
+    height: 43px;
+  }
+  ._figma {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* 버튼 */
+  .read_Sixman_Btn {
+    font-size: 12px;
+  }
+  .read_AllTo_Btn {
+    font-size: 12px;
+  }
+  .read_MyPort_Btn {
+    font-size: 12px;
+  }
+  .read_Kiosk_Btn {
+    font-size: 12px;
+  }
+  .read_StopWatch_Btn {
+    font-size: 12px;
+  }
+
+  @keyframes textAnim {
+    from {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+/*태블릿 디바이스 (가로 해상도가 768px보다 크고 991px 보다 작은 화면에 적용)  */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    height: auto;
+  }
+  .skillsHashTag {
+    font-size: 40px;
+    margin-right: 15px;
+  }
+  .skillsTitle {
+    font-size: 45px;
+  }
+
+  .titles .titles_TitleArea .title_Title {
+    font-size: 20px;
+    padding: 20px;
+  }
+  .titles .titles_TitleArea .title_Text {
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  /* .detail {
+    height: 50vh;
+  } */
+  .detail ._detailEx {
+    padding: 0px 10px;
+  }
+  .detail ._detailEx ._detailEx_Text {
+    font-size: 16px;
+    line-height: 2.3;
+    margin: 15px 0px;
+  }
+
+  .previewContainer .previewInnerContainer .carouselContainer {
+    height: 50vh;
+  }
+  .previewContainer .previewInnerContainer .carouselContaine_App {
+    height: 50vh;
+  }
+
+  /* 아이콘 CSS */
+  .html {
+    width: 60px;
+    height: 60px;
+  }
+  .css {
+    width: 60px;
+    height: 60px;
+  }
+  .js {
+    width: 63px;
+    height: 63px;
+  }
+  .reactJs {
+    width: 50px;
+    height: 50px;
+  }
+  .reactNative {
+    width: 60px;
+    height: 53px;
+  }
+  ._figma {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* 버튼 */
+  .read_Sixman_Btn {
+    font-size: 12px;
+  }
+  .read_AllTo_Btn {
+    font-size: 12px;
+  }
+  .read_MyPort_Btn {
+    font-size: 12px;
+  }
+  .read_Kiosk_Btn {
+    font-size: 12px;
+  }
+  .read_StopWatch_Btn {
+    font-size: 12px;
+  }
+
+  @keyframes textAnim {
+    from {
+      transform: translateX(70px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+/* 데스크탑 (가로 해상도가 992px보다 크고 1199px 보다 작은 화면에 적용)  */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .skillsHashTag {
+    font-size: 45px;
+    margin-right: 15px;
+  }
+  .skillsTitle {
+    font-size: 50px;
+  }
+
+  .titles .titles_TitleArea .title_Title {
+    font-size: 22px;
+    padding: 30px;
+  }
+  .titles .titles_TitleArea .title_Text {
+    font-size: 16px;
+    padding: 30px;
+  }
+  .detail ._detailEx {
+    padding: 0px 15px;
+  }
+  .detail ._detailEx ._detailEx_Text {
+    font-size: 18px;
+    line-height: 2;
+  }
+
+  .previewContainer .previewInnerContainer .carouselContainer {
+    margin-top: 30px;
+  }
+  .previewContainer .previewInnerContainer .carouselContaine_App {
+    margin-top: 30px;
+  }
+
+  /* 아이콘 CSS */
+  .html {
+    width: 70px;
+    height: 70px;
+  }
+  .css {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 10px;
+  }
+  .js {
+    width: 70px;
+    height: 70px;
+  }
+  .reactJs {
+    width: 60px;
+    height: 60px;
+  }
+  .reactNative {
+    width: 70px;
+    height: 63px;
+  }
+  ._figma {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* 버튼 */
+  .read_Sixman_Btn {
+    font-size: 14px;
+  }
+  .read_AllTo_Btn {
+    font-size: 14px;
+  }
+  .read_MyPort_Btn {
+    font-size: 14px;
+  }
+  .read_Kiosk_Btn {
+    font-size: 14px;
+  }
+  .read_StopWatch_Btn {
+    font-size: 14px;
+  }
+}
+
+/* 큰화면 데스크탑 (가로 해상도가 1200px 보다 큰 화면에 적용)  */
+@media (min-width: 1200px) {
+}

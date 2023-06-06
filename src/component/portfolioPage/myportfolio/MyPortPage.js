@@ -1,57 +1,35 @@
+import PortfolioPage from "../PortfolioPage";
 import MyPortCarousel from "./MyPortCarousel";
-import styles from "./MyPortPage.module.css";
+import styles from "../PortfolioPage.module.css";
+import DetilaPortfolio from "../../portfolioDetail/detailPortfolio/DetilaPortfolio";
 
-export default function MyPortPage() {
+export default function MyPortPage(props) {
   return (
-    <div className={styles.container}>
-      <div className={styles.previewContainer}>
-        <div className={styles.previewInnerContainer}>
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <span className={styles.skillsHashTag}>#</span>
-            <a className={styles.skillsTitle} href="#Portfolio">
-              Project
-            </a>
-          </div>
-          <div className={styles.carouselContainer}>
-            <MyPortCarousel />
-          </div>
-        </div>
-        <div className={styles.projectExContainer}>
-          <div className={styles.innerExContainer}>
-            <div className={styles.titles}>
-              <div className={styles.titles_TitleArea}>
-                <div className={styles.title_Title}>Title</div>
-                <div className={styles.title_Text}>
-                  Personal Prj - My Portfolio
-                </div>
-              </div>
-              <div className={styles.titles_TitleArea}>
-                <div className={styles.title_Title}>Role</div>
-                <div className={styles.title_Text}>Frontend</div>
-              </div>
-              <div className={styles.titles_TitleArea}>
-                <div className={styles.title_Title}>Skills</div>
-                <div className={styles.skillContainer}>
-                  <div className={styles.reactJs}></div>
-                  <div className={styles.css}></div>
-                  <div className={styles._figma}></div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.detail}>
-              <div className={styles._detailEx}>
-                <p style={{ fontSize: 18, lineHeight: 2 }}>
-                  학원에서 처음으로 진행해본 팀 프로젝트입니다. 본 프로젝트를
-                  진행하면서 HTML, CSS, JavaScript를 사용해봄으로써 <br />
-                  웹 개발의 기본 지식을 쌓을 수 있었고 프론트 엔드 분야에 매력을
-                  느끼고 <br />
-                  본격적으로 시작하게 된 계기가 되었습니다.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <PortfolioPage
+      display={"web"}
+      BG_Color={"#EFF2FB"}
+      titleColor={"rgb(77, 77, 77)"}
+      visibleCarousel={<MyPortCarousel />}
+      textColor={"black"}
+      title={"Pesoanl Prj - My Portfolio Web Site"}
+      role={"Frontend"}
+      skill={
+        <>
+          <div className={styles.reactJs}></div>
+          <div className={styles._figma}></div>
+        </>
+      }
+      explanation={
+        <>
+          저에 대한 포트폴리오 소개 페이지입니다. <br />
+          정보 소개 페이지인 만큼 기획 단계부터 보는 이가 불편함을 겪지 않도록
+          해야한다는 것에 중점을 두었으며 간략하고 실속있는 페이지를 만들기 위해
+          UI/UX를 고려해서 직접 디자인 후 제작하였습니다. 디자인 및 제작에 대한
+          실력 상승과 더불어 기획에 대한 이해를 넓히는 계기가 되었습니다.
+        </>
+      }
+      btnStyles={<button className={styles.read_MyPort_Btn}>Read Me.</button>}
+      visibleDetailView={<DetilaPortfolio />}
+    ></PortfolioPage>
   );
 }

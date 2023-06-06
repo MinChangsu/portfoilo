@@ -1,0 +1,66 @@
+.overlay {
+  background-color: #eff2fb;
+
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: OAGothic-ExtraBold;
+}
+
+.detailContainer {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.detailContainer div {
+  width: 350px;
+  height: 200px;
+  margin: 10px;
+}
+.detailContainer .portfolioImg_1 {
+  background-image: url("../../../../public/images/portfolioImages/portfolioImg/portfolio_1.png");
+  background-size: 100% 100%;
+}
+.detailContainer .portfolioImg_2 {
+  background-image: url("../../../../public/images/portfolioImages/portfolioImg/portfolio_2.png");
+  background-size: 100% 100%;
+}
+.detailContainer .portfolioImg_3 {
+  background-image: url("../../../../public/images/portfolioImages/portfolioImg/portfolio_3.png");
+  background-size: 100% 100%;
+}
+.detailContainer .portfolioImg_4 {
+  background-image: url("../../../../public/images/portfolioImages/portfolioImg/portfolio_4.png");
+  background-size: 100% 100%;
+}
+.detailContainer .portfolioImg_5 {
+  background-image: url("../../../../public/images/portfolioImages/portfolioImg/portfolio_5.png");
+  background-size: 100% 100%;
+}
+.detailContainer .portfolioImg_6 {
+  background-image: url("../../../../public/images/portfolioImages/portfolioImg/portfolio_6.png");
+  background-size: 100% 100%;
+}
+.detailContainer .portfolioImg_7 {
+  background-image: url("../../../../public/images/portfolioImages/portfolioImg/portfolio_7.png");
+  background-size: 100% 100%;
+}
+.detailContainer .portfolioImg_8 {
+  background-image: url("../../../../public/images/portfolioImages/portfolioImg/portfolio_8.png");
+  background-size: 100% 100%;
+}
+.detailContainer .portfolioImg_9 {
+  background-image: url("../../../../public/images/portfolioImages/portfolioImg/portfolio_9.png");
+  background-size: 100% 100%;
+}
+.detailContainer .portfolioImg_10 {
+  background-image: url("../../../../public/images/portfolioImages/portfolioImg/portfolio_10.png");
+  background-size: 100% 100%;
+}

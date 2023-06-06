@@ -71,7 +71,7 @@
   opacity: 0;
   color: white;
   font-family: "KCCMurukmuruk";
-  animation: textOpac 3s linear 3s forwards;
+  animation: textOpac 1s linear 2s forwards;
 }
 
 @keyframes _40bar {

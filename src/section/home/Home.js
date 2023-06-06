@@ -1,36 +1,29 @@
 import { useState } from "react";
 import styles from "./Home.module.css";
+import HomeScroll from "./HomeScroll";
 
 export default function Home() {
   const [toggle, setToggle] = useState(false);
   const [navOpac, setNavOpac] = useState(false);
   const [opac, setOpac] = useState(0);
 
-  const quitNav = () => {
-    setToggle(false);
-  };
-
   return (
-    <>
+    <div style={{ overflow: "hidden" }} id="Home">
       {toggle ? (
         <>
           <div className={styles.navBg}>
             {navOpac ? (
               <div className={styles.navText}>
-                <a className={styles.navHome} href="#Home" onClick={quitNav}>
+                <a className={styles.navHome} href="#Home">
                   Home
                 </a>
-                <a className={styles.navIntro} href="#About" onClick={quitNav}>
+                <a className={styles.navIntro} href="#About">
                   About Me
                 </a>
-                <a className={styles.navStack} href="#Stack" onClick={quitNav}>
+                <a className={styles.navStack} href="#Skill">
                   Skills
                 </a>
-                <a
-                  className={styles.navPort}
-                  href="#Portfolio"
-                  onClick={quitNav}
-                >
+                <a className={styles.navPort} href="#Project">
                   Portfolio
                 </a>
               </div>
@@ -68,14 +61,7 @@ export default function Home() {
           </div>
         </>
       )}
-
-      <div className={styles.container} id="Home">
-        <h1 style={{ color: "#102A3F" }}>안녕하세요</h1>
-        <h1 style={{ color: "#102A3F" }}>프론트엔드 개발자</h1>
-        <h1 style={{ color: "#102A3F" }}>
-          <span style={{ fontSize: 70 }}>이광규</span> 포트폴리오입니다.
-        </h1>
-      </div>
-    </>
+      <HomeScroll />
+    </div>
   );
 }

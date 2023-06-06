@@ -1,6 +1,7 @@
 .container {
   background-color: #d1daff;
   padding: 70px;
+  overflow: hidden;
 }
 
 .container .skillsHashTag {
@@ -25,6 +26,24 @@
   }
 }
 
+.skill_btn {
+  width: 100px;
+  height: 50px;
+  margin: 30px 0px;
+  border-radius: 50px;
+  border: none;
+  background-color: #b1b2fe;
+  color: white;
+  font-family: MBC1961GulimM;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
 .container .skillsSubTItle {
   font-family: "KCCMurukmuruk";
   font-weight: 100;
@@ -38,7 +57,7 @@
 .barContainer {
   background-color: #eff2fb;
   width: 100%;
-  height: 130vh;
+  height: auto;
   border-radius: 30px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 
@@ -64,43 +83,43 @@
   margin: 5px;
 }
 
-.barContainer .stackBarArea .stackIcon .iconHTML {
+.iconHTML {
   width: 60px;
   height: 60px;
   background-size: 100% 100%;
   background-image: url("../../../public/images/languageIcons/html_icon.png");
 }
-.barContainer .stackBarArea .stackIcon .iconCSS {
+.iconCSS {
   width: 60px;
   height: 60px;
   background-size: 100% 100%;
   background-image: url("../../../public/images/languageIcons/css_icon.png");
 }
-.barContainer .stackBarArea .stackIcon .iconJS {
+.iconJS {
   width: 60px;
   height: 60px;
   background-size: 100% 100%;
   background-image: url("../../../public/images/languageIcons/JS_icon.png");
 }
-.barContainer .stackBarArea .stackIcon .iconReactJS {
+.iconReactJS {
   width: 55px;
   height: 55px;
   background-size: 100% 100%;
   background-image: url("../../../public/images/languageIcons/reactJS_icon.png");
 }
-.barContainer .stackBarArea .stackIcon .iconRN {
+.iconRN {
   width: 50px;
   height: 45px;
   background-size: 100% 100%;
   background-image: url("../../../public/images/languageIcons/RN_icon.png");
 }
-.barContainer .stackBarArea .stackIcon .iconFigma {
+.iconFigma {
   width: 55px;
   height: 55px;
   background-size: 100% 100%;
   background-image: url("../../../public/images/languageIcons/figma_icon.png");
 }
-.barContainer .stackBarArea .stackIcon .iconGit {
+.iconGit {
   width: 50px;
   height: 50px;
   background-size: 100% 100%;
@@ -178,13 +197,12 @@
   }
 
   .container .skillsHashTag {
-    font-size: 20px;
-    margin: 10px;
+    font-size: 35px;
+    margin: 30px 15px;
   }
 
   .container .skillsTitle {
-    font-size: 30px;
-    margin-top: 10px;
+    font-size: 40px;
   }
 
   .container .skillsSubTItle {
@@ -234,8 +252,8 @@
   }
 
   .container .skillsHashTag {
-    font-size: 30px;
-    margin: 15px;
+    font-size: 35px;
+    margin: 30px 15px;
   }
 
   .container .skillsTitle {
@@ -245,10 +263,6 @@
   .container .skillsSubTItle {
     font-size: 15px;
     text-align: center;
-  }
-
-  .barContainer {
-    height: 200vh;
   }
   /* 아이콘 */
   .barContainer .stackBarArea .stackIcon .iconHTML {
@@ -289,11 +303,11 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .container .skillsHashTag {
     font-size: 40px;
-    margin: 20px;
+    margin: 30px 15px;
   }
 
   .container .skillsTitle {
-    font-size: 50px;
+    font-size: 45px;
   }
 
   .container .skillsSubTItle {
@@ -337,6 +351,14 @@
 
 /* 데스크탑 (가로 해상도가 992px보다 크고 1199px 보다 작은 화면에 적용)  */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .container .skillsHashTag {
+    font-size: 40px;
+    margin: 30px 15px;
+  }
+
+  .container .skillsTitle {
+    font-size: 45px;
+  }
 }
 
 /* 큰화면 데스크탑 (가로 해상도가 1200px 보다 큰 화면에 적용)  */

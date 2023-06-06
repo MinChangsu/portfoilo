@@ -1,39 +1,40 @@
+import ACarousel from "./ACarousel";
+import CarouselItem from "../CarouselItem";
 import styles from "./AllToCarousel.module.css";
-import ACarousel, { ACarouselItem } from "./ACarousel";
 
 export default function AllToCarousel() {
   return (
     <ACarousel>
-      <ACarouselItem>
+      <CarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img1}></div>
         </div>
-      </ACarouselItem>
-      <ACarouselItem>
+      </CarouselItem>
+      <CarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img2}></div>
         </div>
-      </ACarouselItem>
-      <ACarouselItem>
+      </CarouselItem>
+      <CarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img3}></div>
         </div>
-      </ACarouselItem>
-      <ACarouselItem>
+      </CarouselItem>
+      <CarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img4}></div>
         </div>
-      </ACarouselItem>
-      <ACarouselItem>
+      </CarouselItem>
+      <CarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img5}></div>
         </div>
-      </ACarouselItem>
-      <ACarouselItem>
+      </CarouselItem>
+      <CarouselItem>
         <div className={styles.imgContainer}>
           <div className={styles.img6}></div>
         </div>
-      </ACarouselItem>
+      </CarouselItem>
     </ACarousel>
   );
 }

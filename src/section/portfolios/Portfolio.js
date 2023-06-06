@@ -7,66 +7,42 @@ import KioskPage from "../../component/portfolioPage/moviekiosk/KioskPage";
 import StopWatchPage from "../../component/portfolioPage/stopwatch/StopWatchPage";
 
 export default function Portfolio() {
-  const [selectSixman, setSelectSixman] = useState(false);
-  const [selectAllTo, setSelectAllTo] = useState(false);
-  const [selectMySite, setSelectMySite] = useState(true);
-  const [selectKiosk, setSelectKiosk] = useState(false);
-  const [selectStopWatch, setSelectStopWatch] = useState(false);
+  const [visiblePage, setVisiblePage] = useState("mysite");
 
   const selectedSixman = () => {
-    setSelectSixman((prev) => !prev);
-    setSelectAllTo(false);
-    setSelectMySite(false);
-    setSelectKiosk(false);
-    setSelectStopWatch(false);
+    setVisiblePage("sixman");
   };
   const selectedAllTo = () => {
-    setSelectSixman(false);
-    setSelectAllTo((prev) => !prev);
-    setSelectMySite(false);
-    setSelectKiosk(false);
-    setSelectStopWatch(false);
+    setVisiblePage("allto");
   };
   const selectedMySite = () => {
-    setSelectSixman(false);
-    setSelectAllTo(false);
-    setSelectMySite((prev) => !prev);
-    setSelectKiosk(false);
-    setSelectStopWatch(false);
+    setVisiblePage("mysite");
   };
   const selectedKiosk = () => {
-    setSelectSixman(false);
-    setSelectAllTo(false);
-    setSelectMySite(false);
-    setSelectKiosk((prev) => !prev);
-    setSelectStopWatch(false);
+    setVisiblePage("kiosk");
   };
   const selectedStopWatch = () => {
-    setSelectSixman(false);
-    setSelectAllTo(false);
-    setSelectMySite(false);
-    setSelectKiosk(false);
-    setSelectStopWatch((prev) => !prev);
+    setVisiblePage("stopwatch");
   };
 
   return (
-    <div className={styles.container} id="Portfolio">
+    <div className={styles.container} id="Project">
       {(() => {
-        if (selectSixman) {
+        if (visiblePage === "sixman") {
           return <SixmanPage />;
-        } else if (selectAllTo) {
+        } else if (visiblePage === "allto") {
           return <AllToPage />;
-        } else if (selectMySite) {
+        } else if (visiblePage === "mysite") {
           return <MyPortPage />;
-        } else if (selectKiosk) {
+        } else if (visiblePage === "kiosk") {
           return <KioskPage />;
-        } else if (selectStopWatch) {
+        } else if (visiblePage === "stopwatch") {
           return <StopWatchPage />;
         }
       })()}
       <div className={styles.previewSelectContainer}>
         {/* sixman */}
-        {selectSixman ? (
+        {visiblePage === "sixman" ? (
           <div className={styles.selectedFirstArea}>
             <div className={styles.selectedSixmanPrj}></div>
           </div>
@@ -76,7 +52,7 @@ export default function Portfolio() {
           </div>
         )}
         {/* All To Us */}
-        {selectAllTo ? (
+        {visiblePage === "allto" ? (
           <div className={styles.selectedArea1}>
             <div className={styles.selectedAllTo}></div>
           </div>
@@ -86,7 +62,7 @@ export default function Portfolio() {
           </div>
         )}
         {/* MyPortfolio */}
-        {selectMySite ? (
+        {visiblePage === "mysite" ? (
           <div className={styles.selectedArea2}>
             <div className={styles.selectedMySite}></div>
           </div>
@@ -96,7 +72,7 @@ export default function Portfolio() {
           </div>
         )}
         {/* Kisok Main Prj */}
-        {selectKiosk ? (
+        {visiblePage === "kiosk" ? (
           <div className={styles.selectedArea3}>
             <div className={styles.selectedKiosk}></div>
           </div>
@@ -106,7 +82,7 @@ export default function Portfolio() {
           </div>
         )}
         {/* StopWatch */}
-        {selectStopWatch ? (
+        {visiblePage === "stopwatch" ? (
           <div className={styles.selectedLastArea}>
             <div className={styles.selectedStopWatch}></div>
           </div>

@@ -1,57 +1,41 @@
+import PortfolioPage from "../PortfolioPage";
 import SixmanCarousel from "./SixmanCarousel";
-import styles from "./SixmanPage.module.css";
+import styles from "../PortfolioPage.module.css";
+import DetailSixman from "../../portfolioDetail/detailSixman/DetailSixman";
 
 export default function SixmanPage() {
   return (
-    <div className={styles.container}>
-      <div className={styles.previewContainer}>
-        <div className={styles.previewInnerContainer}>
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <span className={styles.skillsHashTag}>#</span>
-            <a className={styles.skillsTitle} href="#Portfolio">
-              Project
-            </a>
-          </div>
-          <div className={styles.carouselContainer}>
-            <SixmanCarousel />
-          </div>
-        </div>
-        <div className={styles.projectExContainer}>
-          <div className={styles.innerExContainer}>
-            <div className={styles.titles}>
-              <div className={styles.titles_TitleArea}>
-                <div className={styles.title_Title}>Title</div>
-                <div className={styles.title_Text}>
-                  SixMan Mini Prj - omo Robot R1 Mini
-                </div>
-              </div>
-              <div className={styles.titles_TitleArea}>
-                <div className={styles.title_Title}>Role</div>
-                <div className={styles.title_Text}>Frontend</div>
-              </div>
-              <div className={styles.titles_TitleArea}>
-                <div className={styles.title_Title}>Skills</div>
-                <div className={styles.skillContainer}>
-                  <div className={styles.html}></div>
-                  <div className={styles.css}></div>
-                  <div className={styles.js}></div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.detail}>
-              <div className={styles._detailEx}>
-                <p style={{ fontSize: 18, lineHeight: 2 }}>
-                  학원에서 처음으로 진행해본 팀 프로젝트입니다. 본 프로젝트를
-                  진행하면서 HTML, CSS, JavaScript를 사용해봄으로써 <br />
-                  웹 개발의 기본 지식을 쌓을 수 있었고 프론트 엔드 분야에 매력을
-                  느끼고 <br />
-                  본격적으로 시작하게 된 계기가 되었습니다.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <PortfolioPage
+      display={"web"}
+      BG_Color={"black"}
+      titleColor={"#9b8649"}
+      visibleCarousel={<SixmanCarousel />}
+      textColor={"white"}
+      title={"SixMan Mini Prj - omo Robot R1 Mini"}
+      role={"Frontend"}
+      skill={
+        <>
+          <div className={styles.html}></div>
+          <div className={styles.css}></div>
+          <div className={styles.js}></div>
+        </>
+      }
+      explanation={
+        <>
+          학원에서 처음으로 진행해본 팀 프로젝트입니다. 본 프로젝트를 진행하면서
+          HTML, CSS, JavaScript를 사용해봄으로써 <br />
+          웹 개발의 기본 지식을 쌓을 수 있었고 프론트 엔드 분야에 매력을 느끼고
+          <br />
+          본격적으로 시작하게 된 계기가 되었습니다.
+        </>
+      }
+      btnStyles={
+        <>
+          <button className={styles.read_Sixman_Btn}>Read Me.</button>
+        </>
+      }
+      cancelColor={"white"}
+      visibleDetailView={<DetailSixman />}
+    ></PortfolioPage>
   );
 }

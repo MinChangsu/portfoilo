@@ -1,54 +1,36 @@
-import styles from "./AllToPage.module.css";
+import PortfolioPage from "../PortfolioPage";
 import AllToCarousel from "./AllToCarousel";
+import styles from "../PortfolioPage.module.css";
+import DetailAllToU from "../../portfolioDetail/detailAlltou/DetailAllToU";
 
-export default function AllToPage() {
+export default function AllToPage(props) {
   return (
-    <div className={styles.container}>
-      <div className={styles.previewContainer}>
-        <div className={styles.previewInnerContainer}>
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <span className={styles.skillsHashTag}>#</span>
-            <a className={styles.skillsTitle} href="#Portfolio">
-              Project
-            </a>
-          </div>
-          <div className={styles.carouselContainer}>
-            <AllToCarousel />
-          </div>
-        </div>
-        <div className={styles.projectExContainer}>
-          <div className={styles.innerExContainer}>
-            <div className={styles.titles}>
-              <div className={styles.titles_TitleArea}>
-                <div className={styles.title_Title}>Title</div>
-                <div className={styles.title_Text}>Team Prj - All To U</div>
-              </div>
-              <div className={styles.titles_TitleArea}>
-                <div className={styles.title_Title}>Role</div>
-                <div className={styles.title_Text}>Frontend</div>
-              </div>
-              <div className={styles.titles_TitleArea}>
-                <div className={styles.title_Title}>Skills</div>
-                <div className={styles.skillContainer}>
-                  <div className={styles.reactJs}></div>
-                  <div className={styles.css}></div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.detail}>
-              <div className={styles._detailEx}>
-                <p style={{ fontSize: 18, lineHeight: 2 }}>
-                  학원에서 처음으로 진행해본 팀 프로젝트입니다. 본 프로젝트를
-                  진행하면서 HTML, CSS, JavaScript를 사용해봄으로써 <br />
-                  웹 개발의 기본 지식을 쌓을 수 있었고 프론트 엔드 분야에 매력을
-                  느끼고 <br />
-                  본격적으로 시작하게 된 계기가 되었습니다.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <PortfolioPage
+      display={"web"}
+      BG_Color={"#5232cd"}
+      titleColor={"#ffeb3a"}
+      visibleCarousel={<AllToCarousel />}
+      textColor={"white"}
+      title={"Team Prj : All_To_U"}
+      role={"Frontend"}
+      skill={
+        <>
+          <div className={styles.reactJs}></div>
+          <div className={styles._figma}></div>
+        </>
+      }
+      explanation={
+        <>
+          구상, 기획, 디자인, 제작까지 7일 동안 진행한 프로젝트로 진행한
+          프로젝트 중 가장 짧은 시간 내에 완성한 프로젝트입니다. <br />
+          주어진 시간이 짧은 만큼 팀 원들과의 협업 과정에서 커뮤니케이션을
+          중점에 두고 진행하였으며 <br />
+          axios 및 fetch 등을 사용해봄으로써 서버와의 API 통신에 대한 이해도가
+          상승할 수 있었던 프로젝트였습니다.
+        </>
+      }
+      btnStyles={<button className={styles.read_AllTo_Btn}>Read Me.</button>}
+      visibleDetailView={<DetailAllToU />}
+    ></PortfolioPage>
   );
 }

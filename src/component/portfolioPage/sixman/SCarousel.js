@@ -2,14 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import styles from "./SCarousel.module.css";
 
-export const SCarouselItem = ({ children, width }) => {
-  return (
-    <div className={styles.carousel_item} style={{ width: width }}>
-      {children}
-    </div>
-  );
-};
-
 const SCarousel = ({ children }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [paused, setPaused] = useState(false);

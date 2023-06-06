@@ -1,58 +1,37 @@
+import PortfolioPage from "../PortfolioPage";
 import KioskCarousel from "./KioskCarousel";
-import styles from "./KioskPage.module.css";
+import styles from "../PortfolioPage.module.css";
+import DetailKiosk from "../../portfolioDetail/detailKiosk/DetailKiosk";
 
-export default function KioskPage() {
+export default function KioskPage(props) {
   return (
-    <div className={styles.container}>
-      <div className={styles.previewContainer}>
-        <div className={styles.previewInnerContainer}>
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <span className={styles.skillsHashTag}>#</span>
-            <a className={styles.skillsTitle} href="#Portfolio">
-              Project
-            </a>
-          </div>
-          <div className={styles.carouselContainer}>
-            <KioskCarousel />
-          </div>
-        </div>
-        <div className={styles.projectExContainer}>
-          <div className={styles.innerExContainer}>
-            <div className={styles.titles}>
-              <div className={styles.titles_TitleArea}>
-                <div className={styles.title_Title}>Title</div>
-                <div className={styles.title_Text}>
-                  SixMan Main Prj - Movie Kiosk
-                </div>
-              </div>
-              <div className={styles.titles_TitleArea}>
-                <div className={styles.title_Title}>Role</div>
-                <div className={styles.title_Text}>
-                  Frontend & 디자인, 설계 및 기획
-                </div>
-              </div>
-              <div className={styles.titles_TitleArea}>
-                <div className={styles.title_Title}>Skills</div>
-                <div className={styles.skillContainer}>
-                  <div className={styles.reactNative}></div>
-                  <div className={styles._figma}></div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.detail}>
-              <div className={styles._detailEx}>
-                <p style={{ fontSize: 18, lineHeight: 2 }}>
-                  학원에서 처음으로 진행해본 팀 프로젝트입니다. 본 프로젝트를
-                  진행하면서 HTML, CSS, JavaScript를 사용해봄으로써 <br />
-                  웹 개발의 기본 지식을 쌓을 수 있었고 프론트 엔드 분야에 매력을
-                  느끼고 <br />
-                  본격적으로 시작하게 된 계기가 되었습니다.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <PortfolioPage
+      display={"app"}
+      BG_Color={"rgb(66, 66, 66)"}
+      titleColor={"#a94cc0"}
+      visibleCarousel={<KioskCarousel />}
+      textColor={"white"}
+      title={"SixMan Main Prj - Movie Kiosk Display"}
+      role={"Frontend & 기획 및 디자인 설계"}
+      skill={
+        <>
+          <div className={styles.reactNative}></div>
+          <div className={styles._figma}></div>
+        </>
+      }
+      explanation={
+        <>
+          장기 프로젝트로 React Native를 독학하여 사용하여 개발한
+          프로젝트입니다.
+          <br />
+          Figma를 사용하여 UI/UX 구상 후 직접 디자인 하였으며 React Native
+          프레임워크를 학습하며 App 개발에 대한 흥미를 가질 수 있었으며, 협업
+          과정에 있어서 기획 단계 커뮤니케이션의 중요성을 깨닫게 해준
+          프로젝트입니다.
+        </>
+      }
+      btnStyles={<button className={styles.read_Kiosk_Btn}>Read Me.</button>}
+      visibleDetailView={<DetailKiosk />}
+    ></PortfolioPage>
   );
 }

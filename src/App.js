@@ -1,3 +1,4 @@
+import Footer from "./section/footer/Footer";
 import Home from "./section/home/Home";
 import MyInfo from "./section/information/MyInfo";
 import Portfolio from "./section/portfolios/Portfolio";
@@ -10,6 +11,7 @@ function App() {
       <MyInfo />
       <Stack />
       <Portfolio />
+      <Footer />
     </>
   );
 }

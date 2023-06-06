@@ -1,0 +1,11 @@
+.overlay {
+  background-color: #5232cd;
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.overlay .overlayContainer {
+}
