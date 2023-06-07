@@ -30,7 +30,7 @@ export default function KioskPage(props) {
           프로젝트입니다.
         </>
       }
-      btnStyles={<button className={styles.read_Kiosk_Btn}>Read Me.</button>}
+      btnStyles={<button className={styles.read_Kiosk_Btn}>✔ Preview</button>}
       visibleDetailView={<DetailKiosk />}
     ></PortfolioPage>
   );

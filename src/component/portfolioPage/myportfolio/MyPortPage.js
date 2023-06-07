@@ -28,7 +28,7 @@ export default function MyPortPage(props) {
           실력 상승과 더불어 기획에 대한 이해를 넓히는 계기가 되었습니다.
         </>
       }
-      btnStyles={<button className={styles.read_MyPort_Btn}>Read Me.</button>}
+      btnStyles={<button className={styles.read_MyPort_Btn}>✔ Preview</button>}
       visibleDetailView={<DetilaPortfolio />}
     ></PortfolioPage>
   );

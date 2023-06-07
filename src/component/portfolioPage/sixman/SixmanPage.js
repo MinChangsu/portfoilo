@@ -31,10 +31,9 @@ export default function SixmanPage() {
       }
       btnStyles={
         <>
-          <button className={styles.read_Sixman_Btn}>Read Me.</button>
+          <button className={styles.read_Sixman_Btn}>✔ Preview</button>
         </>
       }
-      cancelColor={"white"}
       visibleDetailView={<DetailSixman />}
     ></PortfolioPage>
   );

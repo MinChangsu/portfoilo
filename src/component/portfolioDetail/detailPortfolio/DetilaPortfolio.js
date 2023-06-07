@@ -7,6 +7,7 @@ export default function DetilaPortfolio() {
         Lee Gwang Gyu's <br />
         Portfolio Page
       </h2>
+      <h3 style={{ textAlign: "center" }}>⌜ Photo Preview ⌟</h3>
       <div className={styles.detailContainer}>
         <div className={styles.portfolioImg_1}></div>
         <div className={styles.portfolioImg_2}></div>

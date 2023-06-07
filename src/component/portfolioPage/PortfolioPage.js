@@ -25,11 +25,10 @@ export default function PortfolioPage(props) {
                 right: 0,
                 backgroundColor: "transparent",
                 border: "none",
-                color: "white",
                 margin: 10,
                 fontSize: 24,
                 fontWeight: 600,
-                color: props.cancelColor,
+                color: props.titleColor,
                 cursor: "pointer",
               }}
               onClick={() => {

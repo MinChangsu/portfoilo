@@ -1,11 +1,197 @@
 .overlay {
-  background-color: rgb(66, 66, 66);
+  background-color: rgb(44, 44, 44);
 
+  color: white;
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: OAGothic-ExtraBold;
+}
+
+.overlay .header {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.overlay .overlayContainer {
+.detailContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 30px 0px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mainTitle {
+  margin-top: 40px;
+  text-align: center;
+  word-break: keep-all;
+}
+.detailTitle {
+  text-align: center;
+  border-bottom: 3px solid #a94cc0;
+  padding: 5px 0px;
+  color: #a94cc0;
+  word-break: keep-all;
+}
+
+.detailContainer div {
+  width: 350px;
+  height: 500px;
+  margin: 10px 0px;
+}
+.detailContainer .kioskImg_1 {
+  background-image: url("../../../../public/images/portfolioImages/kioskImg/kiosk_1.png");
+  background-size: 100% 100%;
+}
+.detailContainer .kioskImg_2 {
+  background-image: url("../../../../public/images/portfolioImages//kioskImg/kiosk_2.png");
+  background-size: 100% 100%;
+}
+.detailContainer .kioskImg_3 {
+  background-image: url("../../../../public/images/portfolioImages//kioskImg/kiosk_3.png");
+  background-size: 100% 100%;
+}
+.detailContainer .kioskImg_4 {
+  background-image: url("../../../../public/images/portfolioImages//kioskImg/kiosk_4.png");
+  background-size: 100% 100%;
+}
+.detailContainer .kioskImg_5 {
+  background-image: url("../../../../public/images/portfolioImages//kioskImg/kiosk_5.png");
+  background-size: 100% 100%;
+}
+.detailContainer .kioskImg_6 {
+  background-image: url("../../../../public/images/portfolioImages//kioskImg/kiosk_6.png");
+  background-size: 100% 100%;
+}
+.detailContainer .kioskImg_7 {
+  background-image: url("../../../../public/images/portfolioImages//kioskImg/kiosk_7.png");
+  background-size: 100% 100%;
+}
+.detailContainer .kioskImg_8 {
+  background-image: url("../../../../public/images/portfolioImages//kioskImg/kiosk_8.png");
+  background-size: 100% 100%;
+}
+.detailContainer .kioskImg_9 {
+  background-image: url("../../../../public/images/portfolioImages//kioskImg/kiosk_9.png");
+  background-size: 100% 100%;
+}
+
+.kisokVideo {
+  width: 350px;
+  height: 500px;
+  margin: 10px;
+}
+
+/* 갤럭시 폴드 */
+@media (max-width: 280px) {
+  .detailTitle {
+    font-size: 8px;
+  }
+  .mainTitle {
+    font-size: 14px;
+  }
+
+  .detailContainer div {
+    width: 100px;
+    height: 150px;
+    margin: 5px 0px;
+  }
+
+  .kisokVideo {
+    width: 100px;
+    height: 150px;
+    margin: 5px;
+  }
+}
+
+/* 세로모드 모바일 디바이스 (가로 해상도가 576px 보다 작은 화면에 적용) */
+@media (min-width: 281px) and (max-width: 575px) {
+  .detailTitle {
+    font-size: 12px;
+  }
+  .mainTitle {
+    font-size: 18px;
+  }
+
+  .detailContainer div {
+    width: 150px;
+    height: 210px;
+    margin: 10px 0px;
+  }
+
+  .kisokVideo {
+    width: 150px;
+    height: 210px;
+    margin: 10px;
+  }
+}
+
+/* 가로모드 모바일 디바이스 (가로 해상도가 576px보다 크고 768px 보다 작은 화면에 적용)  */
+@media (min-width: 576px) and (max-width: 767px) {
+  .detailContainer {
+    padding: 10px 0px;
+  }
+
+  .detailTitle {
+    font-size: 18px;
+  }
+
+  .detailContainer div {
+    width: 250px;
+    height: 360px;
+    margin: 10px 0px;
+  }
+
+  .kisokVideo {
+    width: 250px;
+    height: 360px;
+    margin: 10px;
+  }
+}
+
+/*태블릿 디바이스 (가로 해상도가 768px보다 크고 991px 보다 작은 화면에 적용)  */
+@media (min-width: 768px) and (max-width: 991px) {
+  .detailTitle {
+    font-size: 18px;
+  }
+
+  .detailContainer div {
+    width: 300px;
+    height: 450px;
+    margin: 10px 0px;
+  }
+
+  .kisokVideo {
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+  }
+}
+
+/* 데스크탑 (가로 해상도가 992px보다 크고 1199px 보다 작은 화면에 적용)  */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .detailTitle {
+    font-size: 18px;
+  }
+
+  .detailContainer div {
+    width: 300px;
+    height: 450px;
+    margin: 10px 0px;
+  }
+
+  .kisokVideo {
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+  }
+}
+
+/* 큰화면 데스크탑 (가로 해상도가 1200px 보다 큰 화면에 적용)  */
+@media (min-width: 1200px) {
 }

@@ -27,7 +27,7 @@ export default function StopWatchPage(props) {
         </>
       }
       btnStyles={
-        <button className={styles.read_StopWatch_Btn}>Read Me.</button>
+        <button className={styles.read_StopWatch_Btn}>✔ Preview</button>
       }
       visibleDetailView={<DetailStopWatch />}
     ></PortfolioPage>
