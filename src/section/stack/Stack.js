@@ -24,12 +24,12 @@ export default function Stack() {
         <div style={{ display: "flex", alignItems: "center" }}>
           <span className={styles.skillsHashTag}>#</span>
           <a className={styles.skillsTitle} href="#Skill">
-            Skill
+            Skills
           </a>
         </div>
         {visibleSkillBar ? (
           <p className={styles.skillsSubTItle}>
-            Percentage of My Skill Proficiency
+            Percentage of My Skills Proficiency
           </p>
         ) : (
           <p className={styles.skillsSubTItle}>

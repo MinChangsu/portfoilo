@@ -24,7 +24,7 @@ export default function Home() {
                   Skill
                 </a>
                 <a className={styles.navPort} href="#Project">
-                  Project
+                  Projects
                 </a>
               </div>
             ) : null}

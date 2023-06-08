@@ -42,10 +42,10 @@ export default function HomeScroll() {
           <div className={styles.areaBar}>
             <Animator animation={batch(MoveIn(-1000, 0), MoveOut(-1500, 0))}>
               <div className={styles.areaBar_text}>
-                About Me Portfolio Skills About Me Portfolio Skills About Me
-                Portfolio Skills About Me Portfolio Skills About Me Portfolio
-                Skills About Me Portfolio Skills About Me Portfolio Skills About
-                Me Portfolio Skills
+                About Me Projects Skills About Me Projects Skills About Me
+                Projects Skills About Me Projects Skills About Me Projects
+                Skills About Me Projects Skills About Me Projects Skills About
+                Me Projects Skills
               </div>
             </Animator>
           </div>
@@ -63,7 +63,7 @@ export default function HomeScroll() {
             animation={(StickyIn(), FadeIn(), ZoomIn())}
             className={styles.contentTitle}
           >
-            Content
+            Contents
           </Animator>
           <Animator
             animation={MoveOut(-1000, 0)}
@@ -78,7 +78,7 @@ export default function HomeScroll() {
             animation={MoveOut(-1000, 0)}
             className={styles.contentText}
           >
-            Portfolio
+            Projects
           </Animator>
         </h2>
       </ScrollPage>
@@ -86,10 +86,10 @@ export default function HomeScroll() {
         <div className={styles.areaBar}>
           <Animator animation={batch(MoveIn(-1000, 0), MoveOut(1500, 0))}>
             <div className={styles.areaBar_text}>
-              About Me Portfolio Skills About Me Portfolio Skills About Me
-              Portfolio Skills About Me Portfolio Skills About Me Portfolio
-              Skills About Me Portfolio Skills About Me Portfolio Skills About
-              Me Portfolio Skills
+              About Me Projects Skills About Me Projects Skills About Me
+              Projects Skills About Me Projects Skills About Me Projects Skills
+              About Me Projects Skills About Me Projects Skills About Me
+              Projects Skills
             </div>
           </Animator>
         </div>

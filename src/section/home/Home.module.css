@@ -85,7 +85,7 @@
 .navText a {
   display: block;
   text-decoration: none;
-  color: #102a3f;
+  color: white;
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -95,25 +95,25 @@
   font-size: 34px;
   transition: all 0.5s;
   font-weight: 800;
-  color: white;
+  color: #102a3f;
 }
 .navText .navIntro:hover {
   font-size: 34px;
   transition: all 0.5s;
   font-weight: 800;
-  color: white;
+  color: #102a3f;
 }
 .navText .navStack:hover {
   font-size: 34px;
   transition: all 0.5s;
   font-weight: 800;
-  color: white;
+  color: #102a3f;
 }
 .navText .navPort:hover {
   font-size: 34px;
   transition: all 0.5s;
   font-weight: 800;
-  color: white;
+  color: #102a3f;
 }
 
 .line1 {
