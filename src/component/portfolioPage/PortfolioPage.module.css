@@ -928,18 +928,23 @@
   /* 버튼 */
   .read_Sixman_Btn {
     font-size: 14px;
+    padding-top: 8px;
   }
   .read_AllTo_Btn {
     font-size: 14px;
+    padding-top: 8px;
   }
   .read_MyPort_Btn {
     font-size: 14px;
+    padding-top: 8px;
   }
   .read_Kiosk_Btn {
     font-size: 14px;
+    padding-top: 8px;
   }
   .read_StopWatch_Btn {
     font-size: 14px;
+    padding-top: 8px;
   }
 }
 
