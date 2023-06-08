@@ -21,10 +21,10 @@ export default function Home() {
                   About Me
                 </a>
                 <a className={styles.navStack} href="#Skill">
-                  Skills
+                  Skill
                 </a>
                 <a className={styles.navPort} href="#Project">
-                  Portfolio
+                  Project
                 </a>
               </div>
             ) : null}

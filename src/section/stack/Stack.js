@@ -24,7 +24,7 @@ export default function Stack() {
         <div style={{ display: "flex", alignItems: "center" }}>
           <span className={styles.skillsHashTag}>#</span>
           <a className={styles.skillsTitle} href="#Skill">
-            Skills
+            Skill
           </a>
         </div>
         {visibleSkillBar ? (
