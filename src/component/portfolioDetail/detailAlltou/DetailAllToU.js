@@ -13,7 +13,7 @@ export default function DetailAllToU() {
       </div>
 
       <div className={styles.detailContainer}>
-        <h3 style={{ textAlign: "center" }}>⌜ Photo Preview ⌟</h3>
+        <h2 className={styles.detailTitle}>⌜ Photo Preview ⌟</h2>
         <div className={styles.allToImg_1}></div>
         <div className={styles.allToImg_2}></div>
         <div className={styles.allToImg_3}></div>
@@ -22,7 +22,9 @@ export default function DetailAllToU() {
         <div className={styles.allToImg_6}></div>
         <div className={styles.allToImg_7}></div>
         <div className={styles.allToImg_8}></div>
-        <h3>⌜ Video Preview ⌟</h3>
+        <h2 className={styles.detailTitle} style={{ marginTop: 40 }}>
+          ⌜ Video Preview ⌟
+        </h2>
         <video className={styles.allToVideo} src={video_1} controls></video>
         <video className={styles.allToVideo} src={video_2} controls></video>
         <video className={styles.allToVideo} src={video_3} controls></video>

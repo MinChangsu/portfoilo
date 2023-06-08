@@ -21,12 +21,12 @@ export default function KioskPage(props) {
       }
       explanation={
         <>
-          장기 프로젝트로 React Native를 독학하여 사용하여 개발한
-          프로젝트입니다.
+          처음으로 React Native를 독학하여 개발한 프로젝트입니다.
           <br />
-          Figma를 사용하여 UI/UX 구상 후 직접 디자인 하였으며 React Native
-          프레임워크를 학습하며 App 개발에 대한 흥미를 가질 수 있었으며, 협업
-          과정에 있어서 기획 단계 커뮤니케이션의 중요성을 깨닫게 해준
+          Figma를 사용하여 UI/UX 구상 후 직접 디자인 하였고, React Native라는
+          프레임워크를 학습하면서 Web과 더불어 App 개발에 대한 흥미를 가질 수
+          있었으며 <br />
+          협업 과정에서 팀 원들 간 커뮤니케이션의 중요성을 깨닫게 해준
           프로젝트입니다.
         </>
       }

@@ -27,9 +27,15 @@ export default function Stack() {
             Skills
           </a>
         </div>
-        <p className={styles.skillsSubTItle}>
-          Languages & Frame-Work & DevOps with Experience
-        </p>
+        {visibleSkillBar ? (
+          <p className={styles.skillsSubTItle}>
+            Percentage of My Skill Proficiency
+          </p>
+        ) : (
+          <p className={styles.skillsSubTItle}>
+            Languages & FrameWork & DevOps with Experience
+          </p>
+        )}
         {visibleSkillBar ? (
           <>
             <div className={styles.stackBarArea}>

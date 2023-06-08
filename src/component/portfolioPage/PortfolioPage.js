@@ -18,7 +18,13 @@ export default function PortfolioPage(props) {
     >
       {visibleModal && (
         <div className={styles.overlay}>
-          <div className={styles.overlayContainer}>
+          <div
+            className={
+              props.display === "web"
+                ? styles.overlayContainer_Web
+                : styles.overlayContainer_App
+            }
+          >
             <button
               style={{
                 position: "absolute",

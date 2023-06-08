@@ -21,9 +21,10 @@ export default function StopWatchPage(props) {
       }
       explanation={
         <>
-          운동 전용 스톱워치 어플로 기획을 시작해 제작한 스톱워치입니다. React
-          Native를 사용한 두 번째 프로젝트인 만큼 디자인를 구현하는데 있어서는
-          수월하게 진행할 수 있었습니다.
+          운동 전용 스톱워치로 기획을 시작해 React Native로 제작한
+          스톱워치입니다. <br />본 프로젝트는 JS 코드 구현 및 알고리즘 해결에
+          대한 학습을 주 목적으로 제작하였으며, JavaScript의 이해도 및 실질적
+          구현 능력을 제고시킬 수 있었던 프로젝트입니다.
         </>
       }
       btnStyles={

@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# Lee Gwang Gyu's Portfolio Web Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 이광규의 포트폴리오
 
-## Available Scripts
+### Detail View
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="1426" alt="portfolio_1" src="https://github.com/sweetChilee/MyPortfolio/assets/120015594/7453ad50-277c-418d-a724-11a838c533b1">
+<img width="1426" alt="portfolio_2" src="https://github.com/sweetChilee/MyPortfolio/assets/120015594/ff48f6f1-0429-444b-8ad7-fc325f12fab7">
+<img width="1426" alt="portfolio_3" src="https://github.com/sweetChilee/MyPortfolio/assets/120015594/aca34d75-d653-4a48-8b93-279a10ef2730">
+<img width="1426" alt="portfolio_4" src="https://github.com/sweetChilee/MyPortfolio/assets/120015594/a58e22c5-ea7e-42da-9f40-2ac94b9637be">
+<img width="1426" alt="portfolio_5" src="https://github.com/sweetChilee/MyPortfolio/assets/120015594/4065fad3-d77b-4393-b7aa-1a624fc41003">
+<img width="1425" alt="portfolio_6_1" src="https://github.com/sweetChilee/MyPortfolio/assets/120015594/94a8d51c-aa5c-4fa3-b14e-b10a54bf06ed">
+<img width="1426" alt="portfolio_6" src="https://github.com/sweetChilee/MyPortfolio/assets/120015594/00846399-cfa5-4f81-8d39-9c8142a4f6c9">
+<img width="1425" alt="portfolio_7_1" src="https://github.com/sweetChilee/MyPortfolio/assets/120015594/3f562278-0013-4e1b-9cd1-d5328d53eb1a">
+<img width="1426" alt="portfolio_7" src="https://github.com/sweetChilee/MyPortfolio/assets/120015594/4d35f2fc-2297-4dc1-9182-6de3914e3145">
+<img width="1425" alt="portfolio_8_1" src="https://github.com/sweetChilee/MyPortfolio/assets/120015594/0927d5fa-074a-49f5-8806-8e47c98aa4a0">
+<img width="1426" alt="portfolio_8" src="https://github.com/sweetChilee/MyPortfolio/assets/120015594/8c0fa781-7921-4c81-a7be-9206557f809d">
+<img width="1425" alt="portfolio_9_1" src="https://github.com/sweetChilee/MyPortfolio/assets/120015594/9a43d844-1e81-4104-bb2b-049c246f7f8a">
+<img width="1426" alt="portfolio_9" src="https://github.com/sweetChilee/MyPortfolio/assets/120015594/9348e566-4681-4456-abb5-46988eba8079">
+<img width="1425" alt="portfolio_10_1" src="https://github.com/sweetChilee/MyPortfolio/assets/120015594/fdfaece8-9182-4f35-bcd9-09495d7af9d2">
+<img width="1426" alt="portfolio_10" src="https://github.com/sweetChilee/MyPortfolio/assets/120015594/7f0f2859-cc95-43e1-a8b6-df6e422b2cae">
+<img width="1425" alt="portfolio_16" src="https://github.com/sweetChilee/MyPortfolio/assets/120015594/3b9eeb29-562f-46a5-8a90-85186a58e194">

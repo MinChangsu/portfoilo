@@ -13,11 +13,22 @@
   animation: btnAnim 0.5s forwards;
 }
 
-.overlay .overlayContainer {
+.overlay .overlayContainer_App {
   width: 50%;
   height: 100vh;
   position: relative;
   background-color: white;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.overlay .overlayContainer_Web {
+  width: 60%;
+  height: 100vh;
+  position: relative;
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -358,8 +369,11 @@
 
 /* 갤럭시 폴드 */
 @media (max-width: 280px) {
-  .overlay .overlayContainer {
-    width: 70%;
+  .overlay .overlayContainer_App {
+    width: 100%;
+  }
+  .overlay .overlayContainer_Web {
+    width: 100%;
   }
 
   .container {
@@ -479,8 +493,11 @@
 }
 /* 세로모드 모바일 디바이스 (가로 해상도가 576px 보다 작은 화면에 적용) */
 @media (min-width: 281px) and (max-width: 575px) {
-  .overlay .overlayContainer {
-    width: 70%;
+  .overlay .overlayContainer_App {
+    width: 80%;
+  }
+  .overlay .overlayContainer_Web {
+    width: 90%;
   }
 
   .container {
@@ -622,8 +639,11 @@
 
 /* 가로모드 모바일 디바이스 (가로 해상도가 576px보다 크고 768px 보다 작은 화면에 적용)  */
 @media (min-width: 576px) and (max-width: 767px) {
-  .overlay .overlayContainer {
+  .overlay .overlayContainer_App {
     width: 65%;
+  }
+  .overlay .overlayContainer_Web {
+    width: 75%;
   }
 
   .container {
@@ -740,8 +760,11 @@
 
 /*태블릿 디바이스 (가로 해상도가 768px보다 크고 991px 보다 작은 화면에 적용)  */
 @media (min-width: 768px) and (max-width: 991px) {
-  .overlay .overlayContainer {
-    width: 60%;
+  .overlay .overlayContainer_App {
+    width: 70%;
+  }
+  .overlay .overlayContainer_Web {
+    width: 75%;
   }
 
   .container {
@@ -840,7 +863,7 @@
 
 /* 데스크탑 (가로 해상도가 992px보다 크고 1199px 보다 작은 화면에 적용)  */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .overlay .overlayContainer {
+  .overlay .overlayContainer_App {
     width: 55%;
   }
 

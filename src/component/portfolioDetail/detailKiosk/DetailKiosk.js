@@ -13,9 +13,9 @@ export default function DetailKiosk() {
       </div>
 
       <div className={styles.detailContainer}>
-        <h3 className={styles.detailTitle}>
-          ⌜ <span style={{ color: "white" }}>Photo</span> Preview ⌟
-        </h3>
+        <h2 className={styles.detailTitle}>
+          ⌜<span style={{ color: "white" }}>Photo</span> Preview⌟
+        </h2>
         <div className={styles.kioskImg_1}></div>
         <div className={styles.kioskImg_2}></div>
         <div className={styles.kioskImg_3}></div>
@@ -25,9 +25,10 @@ export default function DetailKiosk() {
         <div className={styles.kioskImg_7}></div>
         <div className={styles.kioskImg_8}></div>
         <div className={styles.kioskImg_9}></div>
-        <h3 className={styles.detailTitle} style={{ marginTop: 40 }}>
-          ⌜ <span style={{ color: "white" }}>Video</span> Preview ⌟
-        </h3>
+        <h2 className={styles.detailTitle} style={{ marginTop: 40 }}>
+          ⌜ <span style={{ color: "white" }}>Video </span>
+          Preview⌟
+        </h2>
         <video className={styles.kisokVideo} src={video_1} controls></video>
         <video className={styles.kisokVideo} src={video_2} controls></video>
         <video className={styles.kisokVideo} src={video_3} controls></video>
