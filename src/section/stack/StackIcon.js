@@ -1,21 +1,9 @@
-import { useEffect } from "react";
 import styles from "./StackIcon.module.css";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 export default function StackIcon() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   return (
     <div className={styles.skill_Container}>
-      <div
-        className={styles.skill_iconContainer}
-        data-aos-anchors="#Stack"
-        data-aos="flip-right"
-        data-aos-duration={2000}
-      >
+      <div className={styles.skill_iconContainer}>
         <div className={styles.skill_iconArea_1}>
           <div className={styles.iconHTML_2}></div>
           <h3>HTML</h3>
@@ -33,12 +21,7 @@ export default function StackIcon() {
         </div>
       </div>
 
-      <div
-        className={styles.skill_iconContainer}
-        data-aos-anchors="#Stack"
-        data-aos="flip-right"
-        data-aos-duration={2000}
-      >
+      <div className={styles.skill_iconContainer}>
         <div
           className={styles.skill_iconArea_1}
           style={{ backgroundColor: "#9AE1F7" }}
@@ -61,12 +44,7 @@ export default function StackIcon() {
         </div>
       </div>
 
-      <div
-        className={styles.skill_iconContainer}
-        data-aos-anchors="#Stack"
-        data-aos="flip-right"
-        data-aos-duration={2000}
-      >
+      <div className={styles.skill_iconContainer}>
         <div
           className={styles.skill_iconArea_1}
           style={{ backgroundColor: "#7FDAAD" }}
