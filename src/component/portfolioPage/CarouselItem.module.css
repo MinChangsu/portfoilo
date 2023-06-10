@@ -13,16 +13,6 @@
   color: #fff;
 }
 
-/* 갤럭시 폴드 */
-@media (max-width: 280px) {
-  .carousel_item {
-    height: 100px;
-  }
-  .carousel_item_App {
-    height: 280px;
-  }
-}
-
 /* 세로모드 모바일 디바이스 (가로 해상도가 576px 보다 작은 화면에 적용) */
 @media (min-width: 281px) and (max-width: 575px) {
   .carousel_item {
@@ -56,7 +46,7 @@
     height: 220px;
   }
   .carousel_item_App {
-    height: 320px;
+    height: 370px;
   }
 }
 
