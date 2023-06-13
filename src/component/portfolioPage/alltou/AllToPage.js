@@ -16,7 +16,11 @@ export default function AllToPage(props) {
       skill={
         <>
           <div className={styles.reactJs}></div>
-          <div className={styles._figma}></div>
+          <a
+            className={styles._figma}
+            href="https://www.figma.com/file/cQlOy6B7yf2dEWqFEUWaHn/All-To-U?type=design&node-id=0-1&t=OSHanjUZk1NB14bt-0"
+          ></a>
+          <span className={styles.click}>← Click here</span>
         </>
       }
       explanation={

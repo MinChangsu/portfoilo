@@ -16,7 +16,11 @@ export default function MyPortPage(props) {
       skill={
         <>
           <div className={styles.reactJs}></div>
-          <div className={styles._figma}></div>
+          <a
+            className={styles._figma}
+            href="https://www.figma.com/file/W87oiHKzYsFuZoiZKBGXH8/My-Portfolio-Site?type=design&node-id=0-1&t=e1xVLuWN7D7XEmyQ-0"
+          ></a>
+          <span className={styles.click}>← Click here</span>
         </>
       }
       explanation={

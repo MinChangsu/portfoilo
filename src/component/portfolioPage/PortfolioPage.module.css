@@ -118,36 +118,71 @@
   height: 70px;
   background-image: url("../../../public/images/languageIcons/html_icon.png");
   background-size: 100% 100%;
+  transition: 0.8s all;
+  &:hover {
+    transform: rotate(360deg);
+  }
 }
 .css {
   width: 70px;
   height: 70px;
   background-image: url("../../../public/images/languageIcons/css_icon.png");
   background-size: 100% 100%;
+  transition: 0.8s all;
+  &:hover {
+    transform: rotate(360deg);
+  }
 }
 .js {
   width: 70px;
   height: 70px;
   background-image: url("../../../public/images/languageIcons/JS_icon.png");
   background-size: 100% 100%;
+  transition: 0.8s all;
+  &:hover {
+    transform: rotate(360deg);
+  }
 }
 .reactJs {
   width: 70px;
   height: 70px;
   background-image: url("../../../public/images/languageIcons/reactJS_icon.png");
   background-size: 100% 100%;
+  transition: 0.8s all;
+  &:hover {
+    transform: rotate(360deg);
+  }
 }
 .reactNative {
   width: 70px;
   height: 63px;
   background-image: url("../../../public/images/languageIcons/RN_icon.png");
   background-size: 100% 100%;
+  transition: 0.8s all;
+  &:hover {
+    transform: rotate(360deg);
+  }
 }
 ._figma {
   width: 60px;
   height: 60px;
   background-image: url("../../../public/images/languageIcons/figma_icon.png");
   background-size: 100% 100%;
+  animation: growScale 1s ease-in-out infinite alternate-reverse;
+}
+
+.click {
+  font-size: 15px;
+  word-break: keep-all;
+}
+
+@keyframes growScale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.15);
+  }
 }
 
 .titles {
@@ -286,8 +321,8 @@
   animation: btnAnim 2s forwards 2s;
   transition: all 0.5s;
   &:hover {
-    border: 6px solid white;
-    background-color: white;
+    border: 6px solid #b1b2fe;
+    background-color: transparent;
     color: #b1b2fe;
   }
   &:active {
@@ -434,28 +469,37 @@
 
   /* 아이콘 CSS */
   .html {
-    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
     height: 40px;
   }
   .css {
-    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
     height: 40px;
   }
   .js {
-    width: 42px;
+    min-width: 42px;
+    max-width: 42px;
     height: 42px;
   }
   .reactJs {
-    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
     height: 40px;
   }
   .reactNative {
-    width: 38px;
+    min-width: 38px;
+    max-width: 38px;
     height: 33px;
   }
   ._figma {
-    width: 30px;
+    min-width: 30px;
+    max-width: 30px;
     height: 30px;
+  }
+  .click {
+    display: none;
   }
 
   /* 버튼 */
@@ -559,28 +603,37 @@
 
   /* 아이콘 CSS */
   .html {
-    width: 52px;
+    min-width: 52px;
+    max-width: 52px;
     height: 52px;
   }
   .css {
-    width: 55px;
+    min-width: 55px;
+    max-width: 55px;
     height: 55px;
   }
   .js {
-    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
     height: 60px;
   }
   .reactJs {
-    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
     height: 50px;
   }
   .reactNative {
-    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
     height: 43px;
   }
   ._figma {
-    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
     height: 40px;
+  }
+  .click {
+    font-size: 10px;
   }
 
   /* 버튼 */
@@ -605,7 +658,7 @@
     padding: 7px 12px;
     border: 4px solid #b1b2fe;
     &:hover {
-      border: 4px solid white;
+      border: 4px solid #b1b2fe;
     }
   }
   .read_Kiosk_Btn {
@@ -705,28 +758,37 @@
 
   /* 아이콘 CSS */
   .html {
-    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
     height: 60px;
   }
   .css {
-    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
     height: 60px;
   }
   .js {
-    width: 65px;
+    min-width: 65px;
+    max-width: 65px;
     height: 65px;
   }
   .reactJs {
-    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
     height: 50px;
   }
   .reactNative {
-    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
     height: 43px;
   }
   ._figma {
-    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
     height: 40px;
+  }
+  .click {
+    font-size: 13px;
   }
 
   /* 버튼 */
@@ -808,28 +870,37 @@
 
   /* 아이콘 CSS */
   .html {
-    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
     height: 60px;
   }
   .css {
-    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
     height: 60px;
   }
   .js {
-    width: 63px;
+    min-width: 63px;
+    max-width: 63px;
     height: 63px;
   }
   .reactJs {
-    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
     height: 50px;
   }
   .reactNative {
-    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
     height: 53px;
   }
   ._figma {
-    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
     height: 40px;
+  }
+  .click {
+    font-size: 10px;
   }
 
   /* 버튼 */
@@ -923,6 +994,9 @@
   ._figma {
     width: 50px;
     height: 50px;
+  }
+  .click {
+    font-size: 13px;
   }
 
   /* 버튼 */

@@ -56,7 +56,6 @@
   background-size: 100% 100%;
   background-image: url("../../../public/images/languageIcons/html_icon.png");
   &:hover {
-    transform: scale(1.1);
     animation: spinIcon 0.5s;
   }
 }
@@ -67,7 +66,6 @@
   background-size: 100% 100%;
   background-image: url("../../../public/images/languageIcons/css_icon.png");
   &:hover {
-    transform: scale(1.1);
     animation: spinIcon 0.5s;
   }
 }
@@ -78,7 +76,6 @@
   background-size: 100% 100%;
   background-image: url("../../../public/images/languageIcons/JS_icon.png");
   &:hover {
-    transform: scale(1.1);
     animation: spinIcon 0.5s;
   }
 }
@@ -89,7 +86,6 @@
   background-size: 100% 100%;
   background-image: url("../../../public/images/languageIcons/reactJS_icon.png");
   &:hover {
-    transform: scale(1.1);
     animation: spinIcon 0.5s;
   }
 }
@@ -100,7 +96,6 @@
   background-size: 100% 100%;
   background-image: url("../../../public/images/languageIcons/RN_icon.png");
   &:hover {
-    transform: scale(1.1);
     animation: spinIcon 0.5s;
   }
 }
@@ -111,7 +106,6 @@
   background-size: 100% 100%;
   background-image: url("../../../public/images/languageIcons/figma_icon.png");
   &:hover {
-    transform: scale(1.1);
     animation: spinIcon 0.5s;
   }
 }
@@ -122,7 +116,6 @@
   background-size: 100% 100%;
   background-image: url("../../../public/images/languageIcons/github_icon.png");
   &:hover {
-    transform: scale(1.1);
     animation: spinIcon 0.5s;
   }
 }

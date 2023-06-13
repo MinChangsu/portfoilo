@@ -46,7 +46,7 @@
   background-image: url("../../../public/images/profile.png");
   background-size: 100% 100%;
 }
-.photoArea .porfileIcon {
+.photoArea .profileIcon {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -55,65 +55,42 @@
   margin: 50px;
 }
 
-.photoArea .porfileIcon .phone {
+.photoArea .profileIcon a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  &:hover {
+    animation: growScale 0.4s alternate infinite;
+  }
+  &:active {
+    transform: scale(1);
+  }
+}
+
+@keyframes growScale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.15);
+  }
+}
+
+.photoArea .profileIcon .phone {
   background-image: url("../../../public/images/iconPhone.png");
   background-size: 100% 100%;
-  width: 60px;
-  height: 60px;
-  transition: all 0.3s;
-  border-radius: 50%;
-  &:hover {
-    box-shadow: 2px 2px 2px gray;
-    transform: scale(1.2);
-  }
-  &:active {
-    transform: scale(1);
-  }
 }
-.photoArea .porfileIcon .email {
+.photoArea .profileIcon .email {
   background-image: url("../../../public/images/iconMail.png");
   background-size: 100% 100%;
-  width: 60px;
-  height: 60px;
-  transition: all 0.3s;
-  border-radius: 50%;
-  &:hover {
-    box-shadow: 2px 2px 2px gray;
-    transform: scale(1.2);
-  }
-  &:active {
-    transform: scale(1);
-  }
 }
-.photoArea .porfileIcon .gitHub {
+.photoArea .profileIcon .gitHub {
   background-image: url("../../../public/images/iconGit.png");
   background-size: 100% 100%;
-  width: 60px;
-  height: 60px;
-  transition: all 0.3s;
-  border-radius: 50%;
-  &:hover {
-    box-shadow: 2px 2px 2px gray;
-    transform: scale(1.2);
-  }
-  &:active {
-    transform: scale(1);
-  }
 }
-.photoArea .porfileIcon .notion {
+.photoArea .profileIcon .notion {
   background-image: url("../../../public/images/iconNotion.png");
   background-size: 100% 100%;
-  width: 60px;
-  height: 60px;
-  transition: all 0.3s;
-  border-radius: 50%;
-  &:hover {
-    box-shadow: 2px 2px 2px gray;
-    transform: scale(1.2);
-  }
-  &:active {
-    transform: scale(1);
-  }
 }
 
 .infoArea {
@@ -166,24 +143,24 @@
     width: 250px;
     height: 250px;
   }
-  .photoArea .porfileIcon {
+  .photoArea .profileIcon {
     margin: 50px 50px 0px 50px;
     width: 140%;
   }
   /* 아이콘 크기 */
-  .photoArea .porfileIcon .phone {
+  .photoArea .profileIcon .phone {
     width: 45px;
     height: 45px;
   }
-  .photoArea .porfileIcon .email {
+  .photoArea .profileIcon .email {
     width: 45px;
     height: 45px;
   }
-  .photoArea .porfileIcon .gitHub {
+  .photoArea .profileIcon .gitHub {
     width: 45px;
     height: 45px;
   }
-  .photoArea .porfileIcon .notion {
+  .photoArea .profileIcon .notion {
     width: 45px;
     height: 45px;
   }
@@ -224,24 +201,24 @@
     width: 300px;
     height: 300px;
   }
-  .photoArea .porfileIcon {
+  .photoArea .profileIcon {
     margin: 50px 50px 0px 50px;
     width: 90%;
   }
   /* 아이콘 크기 */
-  .photoArea .porfileIcon .phone {
+  .photoArea .profileIcon .phone {
     width: 50px;
     height: 50px;
   }
-  .photoArea .porfileIcon .email {
+  .photoArea .profileIcon .email {
     width: 50px;
     height: 50px;
   }
-  .photoArea .porfileIcon .gitHub {
+  .photoArea .profileIcon .gitHub {
     width: 50px;
     height: 50px;
   }
-  .photoArea .porfileIcon .notion {
+  .photoArea .profileIcon .notion {
     width: 50px;
     height: 50px;
   }
@@ -281,7 +258,7 @@
     width: 400px;
     height: 400px;
   }
-  .photoArea .porfileIcon {
+  .photoArea .profileIcon {
     margin: 50px 50px 0px 50px;
     width: 70%;
   }
@@ -312,24 +289,24 @@
     width: 300px;
     height: 300px;
   }
-  .photoArea .porfileIcon {
+  .photoArea .profileIcon {
     margin: 40px;
   }
 
   /* 아이콘 크기 */
-  .photoArea .porfileIcon .phone {
+  .photoArea .profileIcon .phone {
     width: 50px;
     height: 50px;
   }
-  .photoArea .porfileIcon .email {
+  .photoArea .profileIcon .email {
     width: 50px;
     height: 50px;
   }
-  .photoArea .porfileIcon .gitHub {
+  .photoArea .profileIcon .gitHub {
     width: 50px;
     height: 50px;
   }
-  .photoArea .porfileIcon .notion {
+  .photoArea .profileIcon .notion {
     width: 50px;
     height: 50px;
   }
@@ -359,7 +336,7 @@
     width: 350px;
     height: 350px;
   }
-  .photoArea .porfileIcon {
+  .photoArea .profileIcon {
     margin: 40px;
   }
 }

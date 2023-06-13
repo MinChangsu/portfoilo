@@ -16,7 +16,11 @@ export default function KioskPage(props) {
       skill={
         <>
           <div className={styles.reactNative}></div>
-          <div className={styles._figma}></div>
+          <a
+            className={styles._figma}
+            href="https://www.figma.com/file/ZEWgTTZAIWciBlS7kVitlQ/Movie-Kiosk?type=design&node-id=0-1&t=Hm4zeNmk1ac8YFtO-0"
+          ></a>
+          <span className={styles.click}>← Click here</span>
         </>
       }
       explanation={

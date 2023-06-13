@@ -34,7 +34,7 @@ export default function MyInfo() {
             data-aos="fade-right"
             data-aos-duration={500}
           ></div>
-          <div className={styles.porfileIcon} data-aos-anchors="#About">
+          <div className={styles.profileIcon} data-aos-anchors="#About">
             <a
               className={styles.phone}
               href="tel:010-7116-8694"
