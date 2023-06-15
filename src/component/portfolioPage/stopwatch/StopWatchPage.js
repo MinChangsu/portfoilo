@@ -12,7 +12,7 @@ export default function StopWatchPage(props) {
       visibleCarousel={<StopWatchCarousel />}
       textColor={"white"}
       title={"Personal Prj - Work Out StopWatch"}
-      role={"Frontend & 기획 및 디자인 설계"}
+      role={"Frontend & 디자인 설계"}
       skill={
         <>
           <div className={styles.reactNative}></div>

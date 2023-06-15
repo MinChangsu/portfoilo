@@ -12,7 +12,7 @@ export default function AllToPage(props) {
       visibleCarousel={<AllToCarousel />}
       textColor={"white"}
       title={"Team Prj : All_To_U"}
-      role={"Frontend"}
+      role={"Frontend & 디자인 설계"}
       skill={
         <>
           <div className={styles.reactJs}></div>

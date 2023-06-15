@@ -12,7 +12,7 @@ export default function MyPortPage(props) {
       visibleCarousel={<MyPortCarousel />}
       textColor={"black"}
       title={"Pesoanl Prj - My Portfolio Web Site"}
-      role={"Frontend"}
+      role={"Frontend & 디자인 설계"}
       skill={
         <>
           <div className={styles.reactJs}></div>
