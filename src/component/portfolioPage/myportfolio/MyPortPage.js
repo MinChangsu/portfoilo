@@ -15,12 +15,17 @@ export default function MyPortPage(props) {
       role={"Frontend & 디자인 설계"}
       skill={
         <>
-          <div className={styles.reactJs}></div>
+          <div key="reactJs" className={styles.reactJs}>
+            ReactJS
+          </div>
           <a
+            key="figma"
             className={styles._figma}
             href="https://www.figma.com/file/W87oiHKzYsFuZoiZKBGXH8/My-Portfolio-Site?type=design&node-id=0-1&t=e1xVLuWN7D7XEmyQ-0"
-          ></a>
-          <span className={styles.click}>← Click here</span>
+          >
+            Figma
+          </a>
+          <span key="click" className={styles.click}>← Click here</span>
         </>
       }
       explanation={

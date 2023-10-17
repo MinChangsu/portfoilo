@@ -15,12 +15,17 @@ export default function KioskPage(props) {
       role={"Frontend & 기획 및 디자인 설계"}
       skill={
         <>
-          <div className={styles.reactNative}></div>
+          <div key="reactNative" className={styles.reactNative}>
+            React Native
+          </div>
           <a
+            key="figma"
             className={styles._figma}
             href="https://www.figma.com/file/ZEWgTTZAIWciBlS7kVitlQ/Movie-Kiosk?type=design&node-id=0-1&t=Hm4zeNmk1ac8YFtO-0"
-          ></a>
-          <span className={styles.click}>← Click here</span>
+          >
+            Figma
+          </a>
+          <span key="click" className={styles.click}>← Click here</span>
         </>
       }
       explanation={

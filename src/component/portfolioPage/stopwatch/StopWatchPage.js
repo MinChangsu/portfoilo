@@ -15,12 +15,17 @@ export default function StopWatchPage(props) {
       role={"Frontend & 디자인 설계"}
       skill={
         <>
-          <div className={styles.reactNative}></div>
+          <div key="reactNative" className={styles.reactNative}>
+            React Native
+          </div>
           <a
+            key="figma"
             className={styles._figma}
             href="https://www.figma.com/file/JcFcji3K2eNRO7cZA28rDy/Workout-Stop-Watch?type=design&t=OSHanjUZk1NB14bt-0"
-          ></a>
-          <span className={styles.click}>← Click here</span>
+          >
+            Figma
+          </a>
+          <span key="click" className={styles.click}>← Click here</span>
         </>
       }
       explanation={

@@ -41,7 +41,7 @@ export default function MyInfo() {
               data-aos-anchors="#About"
               data-aos="zoom-in"
               data-aos-duration={500}
-            ></a>
+            > </a>
             <a
               className={styles.email}
               href="mailto:mododa17@naver.com"
@@ -49,7 +49,7 @@ export default function MyInfo() {
               data-aos="zoom-in"
               data-aos-duration={500}
               data-aos-delay={50}
-            ></a>
+            > </a>
             <a
               className={styles.gitHub}
               href="https://github.com/dayechoi28243"
@@ -57,7 +57,7 @@ export default function MyInfo() {
               data-aos="zoom-in"
               data-aos-duration={500}
               data-aos-delay={100}
-            ></a>
+            > </a>
             <a
               className={styles.notion}
               href="https://github.com/dayechoi28243"
@@ -65,7 +65,7 @@ export default function MyInfo() {
               data-aos="zoom-in"
               data-aos-duration={500}
               data-aos-delay={150}
-            ></a>
+            > </a>
           </div>
         </div>
         <div className={styles.infoArea}>

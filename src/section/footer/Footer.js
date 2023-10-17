@@ -16,19 +16,19 @@ export default function Footer() {
       data-aos="fade-up"
     >
       <div className={styles.iconArea}>
-        <a className={styles.footer_phone} href="tel:010-8014-0416"></a>
+        <a className={styles.footer_phone} href="tel:010-8014-0416"> </a>
         <a
           className={styles.footer_email}
           href="mailto:mododa17@naver.com"
-        ></a>
+        > </a>
         <a
           className={styles.footer_git}
           href="https://github.com/dayechoi28243"
-        ></a>
+        > </a>
         <a
           className={styles.footer_notion}
           href="https://github.com/dayechoi28243"
-        ></a>
+        > </a>
       </div>
       <div className={styles.navArea}>
         <a className={styles.footer_home} href="#Home">
