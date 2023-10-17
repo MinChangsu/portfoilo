@@ -1,6 +1,6 @@
-# Lee Gwang Gyu's Portfolio Web Site
+# Min Kyeong Seo's Portfolio Web Site
 
-## 이광규의 포트폴리오
+## 민경서의 포트폴리오
 
 ### Detail View
 
