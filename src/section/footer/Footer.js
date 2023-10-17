@@ -16,18 +16,18 @@ export default function Footer() {
       data-aos="fade-up"
     >
       <div className={styles.iconArea}>
-        <a className={styles.footer_phone} href="tel:010-7116-8694"></a>
+        <a className={styles.footer_phone} href="tel:010-8014-0416"></a>
         <a
           className={styles.footer_email}
-          href="mailto:clckflxh90@naver.com"
+          href="mailto:mododa17@naver.com"
         ></a>
         <a
           className={styles.footer_git}
-          href="https://github.com/sweetChilee"
+          href="https://github.com/dayechoi28243"
         ></a>
         <a
           className={styles.footer_notion}
-          href="https://flicker-pound-41e.notion.site/1c58c929fb9c4753878b9e31ec995579"
+          href="https://github.com/dayechoi28243"
         ></a>
       </div>
       <div className={styles.navArea}>
@@ -43,7 +43,7 @@ export default function Footer() {
         <a className={styles.footer_projects} href="#Project">
           Projects
         </a>
-        <div>ⓒ 2023. Lee Gwang Gyu's Portfolio</div>
+        <div>ⓒ 2023. Choi Da-ye's Portfolio</div>
       </div>
     </div>
   );

@@ -37,14 +37,14 @@ export default function MyInfo() {
           <div className={styles.profileIcon} data-aos-anchors="#About">
             <a
               className={styles.phone}
-              href="tel:010-7116-8694"
+              href="tel:010-8014-0416"
               data-aos-anchors="#About"
               data-aos="zoom-in"
               data-aos-duration={500}
             ></a>
             <a
               className={styles.email}
-              href="mailto:clckflxh90@naver.com"
+              href="mailto:mododa17@naver.com"
               data-aos-anchors="#About"
               data-aos="zoom-in"
               data-aos-duration={500}
@@ -52,7 +52,7 @@ export default function MyInfo() {
             ></a>
             <a
               className={styles.gitHub}
-              href="https://github.com/sweetChilee"
+              href="https://github.com/dayechoi28243"
               data-aos-anchors="#About"
               data-aos="zoom-in"
               data-aos-duration={500}
@@ -60,7 +60,7 @@ export default function MyInfo() {
             ></a>
             <a
               className={styles.notion}
-              href="https://flicker-pound-41e.notion.site/1c58c929fb9c4753878b9e31ec995579"
+              href="https://github.com/dayechoi28243"
               data-aos-anchors="#About"
               data-aos="zoom-in"
               data-aos-duration={500}
@@ -76,7 +76,7 @@ export default function MyInfo() {
               data-aos-duration={500}
             >
               「 끊임없이 노력하는 」
-              <span className={styles.name}> 이광규 </span>
+              <span className={styles.name}> 최다예 </span>
               입니다.
             </h2>
             <p data-aos="slide-left" data-aos-duration={500}>

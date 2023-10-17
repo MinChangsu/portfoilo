@@ -27,7 +27,7 @@ export default function HomeScroll() {
         <Animator
           animation={batch(Sticky(), Fade(), MoveIn(0, 1000), MoveOut())}
         >
-          <h1 className={styles.name}>이광규의</h1>
+          <h1 className={styles.name}>최다예의</h1>
         </Animator>
       </ScrollPage>
       <ScrollPage>
